@@ -1,170 +1,291 @@
 <!DOCTYPE html>
 <html lang="vi">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Fonts Awesome Icons -->
-        <link rel="stylesheet" href="css/all.css">
-        
-        <!-- Custom style -->
-        <link rel="stylesheet" href="css/style.css">
-        
-        <title>ONLY COMIC</title>
-        <meta name="description" content="truyen hay, kiem soat thoi gian doc truyen, doc truyen thong minh">
-    </head>
-    <body>
-        <!-- --------------------Navigation------------------ -->
-        <nav class="nav flex-row">
-            <div class="nav-logo">
-                <a href="#" class="text-gray">ONLY COMIC</a>
-            </div>
-                
-            <div>
-                <ul class="nav-list">
-                    <li class="nav-link">
-                        <a href="#">Trang chủ</a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#">Thể loại</a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#xepLoai">Xếp loại</a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#">Tương tác</a>
-                    </li>
-                </ul>
-            </div>
-            
-            <div class="nav-advanced">
-                <ul class="nav-inOut">
-                    <li class="nav-link"><a href="#" >Đăng nhập</a></li>
-                    <li class="nav-link"><a href="#" >Đăng ký</a></li>
-                </ul>
-            </div>
-        </nav>
-         <!-- ------x--------------Navigation--------x---------- -->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts Awesome Icons -->
+    <link rel="stylesheet" href="css/all.css" />
 
-         <!-- --------------------- Main site section----------------- -->
-         <section class="banner">
-            <div class="content flex-column">
-                <h2>chào mừng đến với ONLYCOMIC</h2>
-                <p>bạn hãy đăng nhập để có trải nhiệm tốt nhất</p>
-                <div class="btn">
-                    <span>
-                        <a href="#dangNhap" class="btn">Đăng nhập</a>
-                    </span>
-                    <span>
-                        <a href="#dangKy" class="btn">Đăng ký</a>
-                    </span>
-                </div>
-                <h3>--hoặc--</h3>
-                <span>
-                    <a href="#docTruyen" class="btn">Đọc truyện ngay</a>
-                </span>
-             </div>
-         </section>
-         <section class="main-page">
-            <div class="main-section flex-column">
-                <div class="heading">
-                    <h2>Đề cử</h2>
-                </div>
-                <div class="top-side">
-                    <div class="suggest flex-row">
-                        <figure class="item">
-                            <a href="#">
-                                <img src="./images/comic-item/kiem-than-tuyet-the.jpg" alt="">
-                            </a>
-                            <figcaption>
-                                <div class="subtitle"></div>
-                                <div class="chap"></div>
-                                <div class="time"></div>
-                            </figcaption>
-                        </figure>
-                        <figure class="item">
-                            <a href="#">
-                                <img src="./images/comic-item/bach-luyen-thanh-than.jpg" alt="">
-                            </a>
-                            <figcaption>
-                                <div class="subtitle"></div>
-                                <div class="chap"></div>
-                                <div class="time"></div>
-                            </figcaption>
-                        </figure>
-                        <figure class="item">
-                            <a href="#">
-                                <img src="./images/comic-item/nghich-thien-kiem-than.jpg" alt="">
-                            </a>
-                            <figcaption>
-                                <div class="subtitle"></div>Chap</figcaption>
-                                <div class="chap"></div>
-                                <div class="time"></div>
-                        </figure>
-                        <figure class="item">
-                            <a href="#">
-                                <img src="images/comic-item/than-ma-thien-sat.jpg" alt="">
-                            </a>
-                            <figcaption>
-                                <div class="subtitle"></div>Chap</figcaption>
-                                <div class="chap"></div>
-                                <div class="time"></div>
-                        </figure>
-                        <figure class="item">
-                            <a href="#">
-                                <img src="./images/comic-item/trong-sinh-do-thi-tu-tien.jpg" alt="">
-                            </a>
-                            <figcaption>
-                                <div class="subtitle"></div>Chap</figcaption>
-                                <div class="chap"></div>
-                                <div class="time"></div>
-                        </figure>
-                    </div>
-                </div>
-                <div class="bottom-side">
-                    <div class="clock"></div>
-                    <div class="select"></div>
-                </div>
-            </div>
-         </section>
+    <!-- Custom style -->
+    <link rel="stylesheet" href="css/style.css" />
 
-        <!-- --------Raking---------- -->
-        <section class="ranking" id="xepLoai">
-            <div class="search">
-                <h2>Xếp loại</h2>
-                <input type="text" placeholder="tên truyện....">
-                <button  type="submit"><i class="fas fa-search"></i></button>
+    <title>ONLY COMIC</title>
+    <meta
+      name="description"
+      content="truyen hay, kiem soat thoi gian doc truyen, doc truyen thong minh"
+    />
+  </head>
+  <body>
+    <!-- --------------------Navigation------------------ -->
+    <nav class="nav flex-row">
+      <div class="nav-logo">
+        <a href="#" class="text-gray">ONLY COMIC</a>
+      </div>
 
-            </div>
-            <div class="content-search">
-                <div class="content"></div>
-                <div class="top">
-                    <div class="most-view">
-                        <div class="item"></div>
-                    </div>
-                    <div class="most-love"></div>
-                </div>
-            </div>
-        </section>
+      <div>
+        <ul class="nav-list">
+          <li class="nav-link">
+            <a href="#">Trang chủ</a>
+          </li>
+          <li class="nav-link">
+            <a href="#">Thể loại</a>
+          </li>
+          <li class="nav-link">
+            <a href="#xepLoai">Xếp loại</a>
+          </li>
+          <li class="nav-link">
+            <a href="#">Tương tác</a>
+          </li>
+        </ul>
+      </div>
 
-        <!-- x-------Raking------x--- -->
-        
+      <div class="nav-advanced">
+        <ul class="nav-inOut">
+          <li class="nav-link"><a href="#">Đăng nhập</a></li>
+          <li class="nav-link"><a href="#">Đăng ký</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- ------x--------------Navigation--------x---------- -->
 
-        <!------------- interract ------------>
+    <!-- --------------------- Main site section----------------- -->
+    <section class="banner">
+      <div class="content flex-column">
+        <h2>chào mừng đến với ONLYCOMIC</h2>
+        <p>bạn hãy đăng nhập để có trải nhiệm tốt nhất</p>
+        <div class="btn">
+          <span>
+            <a href="#dangNhap" class="btn">Đăng nhập</a>
+          </span>
+          <span>
+            <a href="#dangKy" class="btn">Đăng ký</a>
+          </span>
+        </div>
+        <h3>--hoặc--</h3>
+        <span>
+          <a href="#docTruyen" class="btn">Đọc truyện ngay</a>
+        </span>
+      </div>
+    </section>
+    <section class="main-page">
+      <div class="main-section flex-column">
+        <div class="heading">
+          <h2>Đề cử</h2>
+        </div>
+        <div class="top-side">
+          <div class="suggest flex-row">
+            <figure class="item">
+              <a href="#">
+                <img src="./images/comic-item/kiem-than-tuyet-the.jpg" alt="" />
+              </a>
+              <figcaption>
+                <div class="subtitle"></div>
+                <div class="chap"></div>
+                <div class="time"></div>
+              </figcaption>
+            </figure>
+            <figure class="item">
+              <a href="#">
+                <img
+                  src="./images/comic-item/bach-luyen-thanh-than.jpg"
+                  alt=""
+                />
+              </a>
+              <figcaption>
+                <div class="subtitle"></div>
+                <div class="chap"></div>
+                <div class="time"></div>
+              </figcaption>
+            </figure>
+            <figure class="item">
+              <a href="#">
+                <img
+                  src="./images/comic-item/nghich-thien-kiem-than.jpg"
+                  alt=""
+                />
+              </a>
+              <figcaption>
+                <div class="subtitle"></div>
+                Chap
+              </figcaption>
+              <div class="chap"></div>
+              <div class="time"></div>
+            </figure>
+            <figure class="item">
+              <a href="#">
+                <img src="images/comic-item/than-ma-thien-sat.jpg" alt="" />
+              </a>
+              <figcaption>
+                <div class="subtitle"></div>
+                Chap
+              </figcaption>
+              <div class="chap"></div>
+              <div class="time"></div>
+            </figure>
+            <figure class="item">
+              <a href="#">
+                <img
+                  src="./images/comic-item/trong-sinh-do-thi-tu-tien.jpg"
+                  alt=""
+                />
+              </a>
+              <figcaption>
+                <div class="subtitle"></div>
+                Chap
+              </figcaption>
+              <div class="chap"></div>
+              <div class="time"></div>
+            </figure>
+          </div>
+        </div>
+        <div class="bottom-side">
+          <div class="clock"></div>
+          <div class="select"></div>
+        </div>
+      </div>
+    </section>
 
-        <section class="interract">
-            <div class="feedback">
-                <
-            </div>
-        </section>
-        <!------------- interract ------------>
-        
-        <!-- ------------x-------- Main site section--------x-------- -->
-        
-        <footer>
-            <div>
-                copyright &copy; 
-            </div>
-        </footer>
-        <script src="./js/main.js"></script>
-    </body>
+    <!-- --------Raking---------- -->
+    <section class="ranking" id="xepLoai">
+      <div class="search">
+        <h2>Xếp loại</h2>
+        <input type="text" placeholder="tên truyện...." />
+        <button type="submit"><i class="fas fa-search"></i></button>
+      </div>
+      <div class="content-search">
+        <div class="content"></div>
+        <div class="top">
+          <div class="most-view">
+            <div class="item"></div>
+          </div>
+          <div class="most-love"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- x-------Raking------x--- -->
+
+    <!------------- interract ------------>
+
+    <section class="interract">
+      <div class="feedback"></div>
+    </section>
+    <!------------- interract ------------>
+
+    <!-- ------------x-------- Main site section--------x-------- -->
+    <!------------- footer ------------>
+    <footer class="footer">
+      <!--contact us-->
+      <div class="footer__contact-us">
+        <h3 class="footer__heading">Liên Hệ chúng tôi</h3>
+        <ul class="footer__contact-us-list">
+          <li class="footer__contact-us-item">
+            <a href="" class="footer__link footer__contact-us-item-link">
+              <i class="footer__contact-us-icon fas fa-envelope-open-text"></i>
+              Email</a
+            >
+          </li>
+
+          <li class="footer__contact-us-item">
+            <a href="" class="footer__link footer__contact-us-item-link">
+              <i class="footer__contact-us-icon fab fa-facebook"></i>
+              Facebook</a
+            >
+          </li>
+
+          <li class="footer__contact-us-item">
+            <a href="" class="footer__link footer__contact-us-item-link">
+              <i class="footer__contact-us-icon fab fa-youtube"></i>
+              Youtube</a
+            >
+          </li>
+
+          <li class="footer__contact-us-item">
+            <a href="" class="footer__link footer__contact-us-item-link">
+              <i class="footer__contact-us-icon fab fa-google-plus"></i>
+              Google</a
+            >
+          </li>
+        </ul>
+      </div>
+      <!--about us-->
+      <div class="footer__about-us">
+        <h3 class="footer__heading">Về chúng tôi</h3>
+        <ul class="footer__about-us-list">
+          <li class="footer__about-us-item">
+            <a href="" class="footer__link footer__about-us-item-link">
+              Giới thiệu</a
+            >
+          </li>
+
+          <li class="footer__about-us-item">
+            <a href="" class="footer__link footer__about-us-item-link"
+              >Điều khoản sử dụng</a
+            >
+          </li>
+
+          <li class="footer__about-us-item">
+            <a href="" class="footer__link footer__about-us-item-link"
+              >Chính sách bảo mật</a
+            >
+          </li>
+
+          <li class="footer__about-us-item">
+            <a href="" class="footer__link footer__about-us-item-link"
+              >Chính sách khiếu nại</a
+            >
+          </li>
+
+          <li class="footer__about-us-item">
+            <a href="" class="footer__link footer__about-us-item-link"
+              >Liên hệ quảng cáo</a
+            >
+          </li>
+
+          <li class="footer__about-us-item">
+            <a href="" class="footer__link footer__about-us-item-link">
+              Báo lỗi-Góp ý
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!--category-->
+      <div class="footer__category">
+        <h3 class="footer__heading">Danh mục</h3>
+        <ul class="footer__category-list">
+          <li class="footer__category-item">
+            <a href="" class="footer__link footer__category-item-link"
+              >Trang chủ</a
+            >
+          </li>
+
+          <li class="footer__category-item">
+            <a href="" class="footer__link footer__category-item-link"
+              >Thế loại</a
+            >
+          </li>
+
+          <li class="footer__category-item">
+            <a href="" class="footer__link footer__category-item-link"
+              >Xếp loại</a
+            >
+          </li>
+
+          <li class="footer__category-item">
+            <a href="" class="footer__link footer__category-item-link"
+              >Trở về đầu trang</a
+            >
+          </li>
+
+          <li class="footer__category-item">
+            <a href="" class="footer__link footer__category-item-link"
+              >Dark mod</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!-- x-------footer------x--- -->
+    <script src="./js/main.js"></script>
+  </body>
 </html>

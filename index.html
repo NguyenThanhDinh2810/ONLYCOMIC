@@ -23,83 +23,92 @@
   </head>
   <body>
     <!-- --------------------Navigation------------------ -->
-    <nav class="nav flex-row">
-      <div class="nav-logo">
-        <a href="#" class="text-gray">ONLY COMIC</a>
-      </div>
-      <!--nav-pc-->
-      <div class="nav-main">
-        <ul class="nav-list hide">
-          <li class="nav-link">
-            <a href="#">Trang chủ</a>
-          </li>
-          <li class="nav-link">
-            <a href="#">Thể loại</a>
-          </li>
-          <li class="nav-link">
-            <a href="#xepLoai">Xếp loại</a>
-          </li>
-          <li class="nav-link">
-            <a href="#">Tương tác</a>
-          </li>
-        </ul>
-      </div>
-      <div class="nav-advanced">
-        <ul class="nav-inOut">
-          <li class="nav-link"><a href="#">Đăng nhập</a></li>
-          <li class="nav-link"><a href="#">Đăng ký</a></li>
-        </ul>
-      </div>
-      <!--nav-moblie-->
-      <div class="nav-mobile-tablet">
-        <label class="nav__bar-btn" for="nav-moblie-input">
-          <i class="fas fa-bars fa-3x"></i>
-        </label>
+    <nav class="nav">
+      <div class="grid wide">
+        <div class="row">
+          <div class="nav__logo col l-3 m-11 c-10">
+            <a href="#" class="nav__logo-text">ONLY COMIC</a>
+          </div>
 
-        <input
-          type="checkbox"
-          class="nav__input"
-          id="nav-moblie-input"
-          hidden
-        />
-        <label class="nav__overlay" for="nav-moblie-input"></label>
+          <!--nav-pc-->
+          <div class="nav-pc col l-9 m-0 c-0">
+            <div class="nav-pc__main-bar col l-8 m-0 c-0">
+              <ul class="nav-pc__main-bar-list nav-pc__bar-list hide">
+                <li class="nav-pc__link">
+                  <a href="#">Trang chủ</a>
+                </li>
+                <li class="nav-pc__link">
+                  <a href="#">Thể loại</a>
+                </li>
+                <li class="nav-pc__link">
+                  <a href="#xepLoai">Xếp loại</a>
+                </li>
+                <li class="nav-pc__link">
+                  <a href="#">Tương tác</a>
+                </li>
+              </ul>
+            </div>
 
-        <div class="nav__mobile">
-          <label class="nav__mobile-close" for="nav-moblie-input">
-            <i class="fas fa-times fa-3x"></i>
-          </label>
-          <ul class="nav__mobile-list">
-            <li class="nav__mobile-link">
-              <a href="">
-                <i class="fas fa-home"> Trang chủ</i>
-              </a>
-            </li>
-            <li class="nav__mobile-link">
-              <a href="">
-                <i class="fas fa-filter"> Thể loại</i>
-              </a>
-            </li>
-            <li class="nav__mobile-link">
-              <a href="">
-                <i class="fas fa-trophy"> Xếp loại</i>
-              </a>
-            </li>
-            <li class="nav__mobile-link">
-              <a href="">
-                <i class="fas fa-exchange-alt"> Tương tác</i>
-              </a>
-            </li>
-            <li class="nav__mobile-link">
-              <a href="">
-                <i class="fas fa-sign-in-alt"> Đăng nhập</i>
-              </a>
-            </li>
-            <li class="nav__mobile-link">
-              <a href="">
-                <i class="fas fa-user-edit"> Đăng ký</i>
-              </a>
-            </li>
-          </ul>
+            <div class="nav-pc__advanced-bar col l-4 m-0 c-0">
+              <ul class="nav-pc__advanced-bar-list nav-pc__bar-list">
+                <li class="nav-pc__link"><a href="#">Đăng nhập</a></li>
+                <li class="nav-pc__link"><a href="#">Đăng ký</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!--nav-moblie-->
+          <div class="nav-mobile-tablet col l-0 m-1 c-2">
+            <label class="nav__bar-btn" for="nav-moblie-input">
+              <i class="fas fa-bars fa-3x"></i>
+            </label>
+
+            <input
+              type="checkbox"
+              class="nav__input"
+              id="nav-moblie-input"
+              hidden
+            />
+            <label class="nav__overlay" for="nav-moblie-input"></label>
+
+            <div class="nav__mobile">
+              <label class="nav__mobile-close" for="nav-moblie-input">
+                <i class="fas fa-times fa-3x"></i>
+              </label>
+              <ul class="nav__mobile-list">
+                <li class="nav__mobile-link">
+                  <a href="">
+                    <i class="fas fa-home"> Trang chủ</i>
+                  </a>
+                </li>
+                <li class="nav__mobile-link">
+                  <a href="">
+                    <i class="fas fa-filter"> Thể loại</i>
+                  </a>
+                </li>
+                <li class="nav__mobile-link">
+                  <a href="">
+                    <i class="fas fa-trophy"> Xếp loại</i>
+                  </a>
+                </li>
+                <li class="nav__mobile-link">
+                  <a href="">
+                    <i class="fas fa-exchange-alt"> Tương tác</i>
+                  </a>
+                </li>
+                <li class="nav__mobile-link">
+                  <a href="">
+                    <i class="fas fa-sign-in-alt"> Đăng nhập</i>
+                  </a>
+                </li>
+                <li class="nav__mobile-link">
+                  <a href="">
+                    <i class="fas fa-user-edit"> Đăng ký</i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
@@ -143,6 +152,7 @@
             </ul>
           </div>
         </div>
+
         <hr />
 
         <div class="row copyright-wrap">

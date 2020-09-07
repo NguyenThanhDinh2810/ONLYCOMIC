@@ -21,18 +21,20 @@
       content="truyen hay, kiem soat thoi gian doc truyen, doc truyen thong minh"
     />
   </head>
+
   <body>
-    <!-- --------------------Navigation------------------ -->
+    <!-- --------------------NAVIGATION------------------ -->
+    <!--nav-bar-->
     <nav class="nav">
       <div class="grid wide">
         <div class="row">
-          <div class="nav__logo col l-3 m-11 c-10">
+          <div class="nav__logo col l-3 m-10 c-10">
             <a href="#" class="nav__logo-text">ONLY COMIC</a>
           </div>
 
           <!--nav-pc-->
           <div class="nav-pc col l-9 m-0 c-0">
-            <div class="nav-pc__main-bar col l-8 m-0 c-0">
+            <div class="nav-pc__main-bar col l-6 m-0 c-0">
               <ul class="nav-pc__main-bar-list nav-pc__bar-list hide">
                 <li class="nav-pc__link">
                   <a href="#">Trang chủ</a>
@@ -49,6 +51,13 @@
               </ul>
             </div>
 
+            <div class="nav-pc__mode-btn col l-2 m-0 c-0">
+              <div class="nav-pc__button">
+                <input type="checkbox" id="switch" class="switch-input" />
+                <label for="switch" class="switch"></label>
+              </div>
+            </div>
+
             <div class="nav-pc__advanced-bar col l-4 m-0 c-0">
               <ul class="nav-pc__advanced-bar-list nav-pc__bar-list">
                 <li class="nav-pc__link"><a href="#">Đăng nhập</a></li>
@@ -58,7 +67,7 @@
           </div>
 
           <!--nav-moblie-->
-          <div class="nav-mobile-tablet col l-0 m-1 c-2">
+          <div class="nav-mobile-tablet col l-0 m-2 c-2">
             <label class="nav__bar-btn" for="nav-moblie-input">
               <i class="fas fa-bars fa-3x"></i>
             </label>
@@ -112,10 +121,15 @@
         </div>
       </div>
     </nav>
-    <!-- ------x--------------Navigation--------x---------- -->
+
+    <!---------XX------------NAVIGATION-------------XX-------->
+
+    <!---------------------MAIN BODY SECTION------------------>
     <section style="height: 1000px"></section>
-    <!------------- footer ------------>
-    <!-- Site footer -->
+
+    <!---------XX----------MAIN BODY SECTION--------XX-------->
+
+    <!--------------------------FOOTER------------------------>
     <footer class="footer">
       <div class="grid wide">
         <div class="row contact-wrap">
@@ -190,8 +204,9 @@
         </div>
       </div>
     </footer>
-    <!-- x-------footer------x--- -->
+    <!---------XX---------------FOOTER-------------XX-------->
     <script src="./js/main.js"></script>
+
     <!-- Load Facebook SDK for JavaScript -->
     <div id="fb-root"></div>
     <script>

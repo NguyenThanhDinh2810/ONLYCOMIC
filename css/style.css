@@ -107,7 +107,7 @@ ul {
   padding: 2rem 1rem;
   justify-content: space-between;
   align-items: center;
-  z-index: 1000;
+  z-index: 0;
   transition: 0.5s;
 }
 .nav.sticky {
@@ -144,7 +144,8 @@ ul {
   display: flex;
   position: relative;
 }
-.nav-pc__main-bar {
+.nav-pc__main-bar.col.l-6.m-0.c-0 {
+  padding: 0;
 }
 .nav-pc__main-bar-list {
   display: flex;
@@ -161,7 +162,6 @@ ul {
   color: var(--text-color);
   border-bottom: 1px solid var(--text-color);
 }
-
 .nav.sticky .nav-pc__link a {
   color: var(--white);
 }
@@ -172,6 +172,7 @@ ul {
   display: flex;
   justify-content: flex-end;
 }
+
 /*nav mobile*/
 @keyframes fadeIn {
   from {
@@ -187,7 +188,10 @@ ul {
   color: #333;
   display: block;
   margin-right: 20px;
-  transition: 0.5s;
+  transition: 0.5s linear;
+}
+.nav__bar-btn i:hover {
+  transform: rotate3d(0, 1, 0, 180deg);
 }
 .nav-mobile-tablet {
   text-align: -webkit-center;
@@ -228,10 +232,11 @@ nav.sticky .nav-mobile-tablet .nav__bar-btn i {
 .nav__mobile-list {
   margin: 5rem 0 0 35%;
   list-style-type: none;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 .nav__mobile-link {
   text-decoration: none;
-  color: #8d99ae;
+  color: #606773;
   display: block;
   padding: 3rem 0;
   font-size: 2rem;
@@ -239,19 +244,86 @@ nav.sticky .nav-mobile-tablet .nav__bar-btn i {
   font-weight: 700;
   font-family: Arial, Helvetica, sans-serif;
 }
+.nav__mobile-link:hover {
+  background-color: #c9c9c9;
+}
 .nav__mobile-link i {
   color: #666;
 }
-.nav__mobile-link i:hover {
-  color: var(--text-color);
-}
 .nav__mobile-close i {
   position: absolute;
-  width: 28px;
-  height: 28px;
   color: #666;
-  top: 1rem;
-  right: 1rem;
+  top: 2rem;
+  right: 2rem;
+  transform: rotate(0);
+  transition: 0.4s linear;
+}
+.nav__mobile-close i:hover {
+  transform: rotate(180deg);
+}
+/*MODE BUTTON*/
+.nav-pc__mode-btn.col.l-2.m-0.c-0 {
+  position: relative;
+  padding: 0;
+  margin-left: 0px;
+}
+.nav-pc__button {
+  position: absolute;
+  right: 0;
+  top: 5px;
+}
+.switch-input {
+  display: none;
+}
+/*before scroll*/
+.switch {
+  position: relative;
+  cursor: pointer;
+  width: 5rem;
+  height: 2.5rem;
+  display: block;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 100rem;
+  border: 1px solid #333;
+  transition: background-color 0.25s linear;
+}
+.switch:after {
+  content: "";
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  background-color: #333;
+  top: 1.5px;
+  left: 2.5px;
+  transition: background-color 0.25s linear, transform 0.25s linear;
+}
+.switch-input:checked + .switch {
+  background-color: #333;
+  border: 1px solid #333;
+}
+.switch-input:checked + .switch:after {
+  transform: translateX(2.3rem);
+  background-color: white;
+}
+/*after scroll*/
+.nav.sticky .switch {
+  border: 1px solid #fff;
+  border: 1px solid #8d99ae;
+}
+.nav.sticky .switch:after {
+  background-color: #8d99ae;
+}
+.nav.sticky .switch-input:checked + .switch {
+  background-color: #8d99ae;
+  border: 1px solid #fff;
+}
+.nav.sticky .switch-input:checked + .switch:after {
+  transform: translateX(2.3rem);
+  background-color: white;
 }
 /* ------------x------------Navbar-----------------x----------- */
 
@@ -620,11 +692,21 @@ footer .social-icons a {
 }
 /*-------------------Responsive----------------------*/
 /*--------------Mobile and Tablet-----------*/
+@keyframes rotate {
+  from {
+  }
+}
 @media (max-width: 1023px) {
   .hide-on-mobile-tablet {
     display: none;
   }
   /*nav-bar*/
+  .nav__logo.col.l-3.m-10.c-10 {
+    text-align: center;
+  }
+  .nav-mobile-tablet.col.l-0.m-2.c-2 {
+    text-align: -webkit-right;
+  }
   .nav__bar-btn {
     display: block;
   }
@@ -697,13 +779,19 @@ footer .social-icons a {
     display: none;
   }
   /*nav-bar*/
+  .nav {
+    transition: 0.3s;
+  }
   .nav__mobile {
     width: 100%;
   }
   .nav__logo {
     text-align: center;
   }
-
+  .nav.sticky {
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
   /*footer*/
   .footer-tittle {
     font-size: 1.4rem;

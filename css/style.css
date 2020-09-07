@@ -539,7 +539,6 @@ nav.sticky .nav-mobile-tablet .nav__bar-btn i {
   background: chartreuse;
   overflow: hidden;
 }
-
 .ranking .content .history {
   position: absolute;
   width: 50%;
@@ -560,17 +559,6 @@ nav.sticky .nav-mobile-tablet .nav__bar-btn i {
 
 /* ----x----interract---x----- */
 /* ------------x-------- Main site section--------x--------*/
-
-/*-----Viewport less then or equal to 750px -----*/
-
-@media only screen and (max-width: 750px) {
-  .nav .nav-menu,
-  .nav-list {
-    flex-direction: column;
-    min-height: 40vh;
-  }
-}
-/*--x--Viewport less then or equal to 750px --x--*/
 
 /* ----------CSS FOOTER------------ */
 .footer {
@@ -692,10 +680,6 @@ footer .social-icons a {
 }
 /*-------------------Responsive----------------------*/
 /*--------------Mobile and Tablet-----------*/
-@keyframes rotate {
-  from {
-  }
-}
 @media (max-width: 1023px) {
   .hide-on-mobile-tablet {
     display: none;

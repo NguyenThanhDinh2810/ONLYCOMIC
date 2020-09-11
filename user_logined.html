@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/all.css" />
 
     <!-- Custom style -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/user_logined.css" />
     <link rel="stylesheet" href="css/grid.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link
@@ -22,18 +22,18 @@
     />
   </head>
 
-  <body>
+  <body class=".night.light-scheme">
     <!-- --------------------NAVIGATION------------------ -->
     <!--nav-bar-->
     <nav class="nav">
       <div class="grid wide">
         <div class="row">
-          <div class="nav__logo col l-3 m-10 c-10">
-            <a href="#" class="nav__logo-text">ONLY COMIC</a>
+          <div class="nav__logo col l-3 m-8 c-8">
+            <a href="main.html" class="nav__logo-text">ONLY COMIC</a>
           </div>
 
           <!--nav-pc-->
-          <div class="nav-pc col l-9 m-0 c-0">
+          <div class="nav-pc col l-9 m-2 c-2">
             <div class="nav-pc__main-bar col l-6 m-0 c-0">
               <ul class="nav-pc__main-bar-list nav-pc__bar-list hide">
                 <li class="nav-pc__link">
@@ -51,17 +51,19 @@
               </ul>
             </div>
 
-            <div class="nav-pc__mode-btn col l-2 m-0 c-0">
-              <div class="nav-pc__button">
-                <input type="checkbox" id="switch" class="switch-input" />
-                <label for="switch" class="switch"></label>
-              </div>
+            <div class="nav-pc__mode-btn col l-2 m-2 c-12">
+                <i class="fas fa-sun fa-spin nav-pc__button-icon"></i>
+                <i class="fas fa-moon nav-pc__button-icon" style="display: none;"></i>
             </div>
 
             <div class="nav-pc__advanced-bar col l-4 m-0 c-0">
               <ul class="nav-pc__advanced-bar-list nav-pc__bar-list">
-                <li class="nav-pc__link"><a href="#">Đăng nhập</a></li>
-                <li class="nav-pc__link"><a href="#">Đăng ký</a></li>
+                <li class="nav-pc__link "><a href="#">
+                  <i class="fas fa-bell"></i>
+                </a></li>
+                <li class="nav-pc__link "><a href="#">
+                  <i class="fas fa-user"></i>
+                </a></li>
               </ul>
             </div>
           </div>
@@ -109,15 +111,11 @@
                     <i class="fas fa-exchange-alt">  Tương tác</i>
                   </a>
                 </li>
-                <li class="nav__mobile-link">
-                  <a href="">
+                <li class="nav__mobile-link click__login" id="menu-login">
                     <i class="fas fa-sign-in-alt">  Đăng nhập</i>
-                  </a>
                 </li>
-                <li class="nav__mobile-link">
-                  <a href="">
+                <li class="nav__mobile-link click__register" id="menu-register">
                     <i class="fas fa-user-edit">  Đăng ký</i>
-                  </a>
                 </li>
               </ul>
             </div>
@@ -128,16 +126,16 @@
 
       <!--MODAL LAYOUT-->
     <!--xóa style nếu có javascript: style="display: none;" -->
-    <div class="modal"style="display: none;">
-      <div class="modal__overlay"></div>
+    <div class="modal" style="display: none;">
+      <div class="modal__overlay click__exit"></div>
       <div class="modal__body">
           <!--REGISTER FORM-->
-            <div class="auth-form" hidden> 
+            <div class="auth-form auth-form__register" hidden> 
               <div class="auth-form__container">
                 <!--author header-->
                 <div class="auth-form__header">
                   <h3 class="auth-form__heading">Đăng ký</h3>
-                  <span class="auth-form__switch-btn">Đăng Nhập</span>
+                  <span class="auth-form__switch-btn click__login">Đăng Nhập</span>
                 </div>
               <!--author form-->
               <div class="auth-form__form">
@@ -145,6 +143,8 @@
                     <input type="text" class="auth-form__input" placeholder="Nhập email của bạn">
                   </div>
                   <div class="auth-form__group">
+                    <i class="fas fa-eye auth-form__register-icon"></i>
+                    <i class="fas fa-eye-slash auth-form__register-icon" style="display: none;"></i>
                     <input type="password" class="auth-form__input" placeholder="Nhập mật khẩu">
                   </div>
                   <div class="auth-form__group">
@@ -161,7 +161,7 @@
               </div>
               <!--author control button-->
               <div class="auth-form__controls">
-                <button class="btn btn--normal auth-form__controls--back">TRỞ LẠI</button>
+                <button class="btn btn--normal auth-form__controls--back click__exit">TRỞ LẠI</button>
                 <button class="btn btn--main">ĐĂNG KÝ</button>
               </div>
             </div>
@@ -183,12 +183,12 @@
           </div>
 
           <!--LOGIN FORM-->
-          <div class="auth-form" hidden>
+          <div class="auth-form auth-form__login" hidden>
             <div class="auth-form__container">
               <!--author header-->
               <div class="auth-form__header">
-                <h3 class="auth-form__heading">Đăng Nhập<h3>
-                <span class="auth-form__switch-btn">Đăng Ký</span>
+                <h3 class="auth-form__heading ">Đăng Nhập<h3>
+                <span class="auth-form__switch-btn click__register">Đăng Ký</span>
               </div>
               <!--author form-->
               <div class="auth-form__form">
@@ -196,6 +196,8 @@
                     <input type="text" class="auth-form__input" placeholder="Nhập email của bạn">
                   </div>
                   <div class="auth-form__group">
+                    <i class="fas fa-eye auth-form__login-icon"></i>
+                    <i class="fas fa-eye-slash auth-form__login-icon" style="display: none;"></i>
                     <input type="password" class="auth-form__input" placeholder="Nhập mật khẩu">
                   </div>
               </div>
@@ -209,7 +211,7 @@
               </div>
               <!--author control button-->
               <div class="auth-form__controls">
-                <button class="btn btn--normal auth-form__controls--back">TRỞ LẠI</button>
+                <button class="btn btn--normal auth-form__controls--back click__exit">TRỞ LẠI</button>
                 <button class="btn btn--main">ĐĂNG NHẬP</button>
               </div>
             </div>
@@ -234,56 +236,23 @@
     <!---------XX------------NAVIGATION-------------XX-------->
 
     <!---------------------MAIN BODY SECTION------------------>
-    <!-- <section style="height: 1000px"></section> -->
-    <div class="auth-form" > 
-      <div class="auth-form__container">
-        <!--author header-->
-        <div class="auth-form__header">
-          <h3 class="auth-form__heading">Đăng ký</h3>
-          <span class="auth-form__switch-btn">Đăng Nhập</span>
-        </div>
-      <!--author form-->
-      <div class="auth-form__form">
-          <div class="auth-form__group">
-            <input type="text" class="auth-form__input" placeholder="Nhập email của bạn">
-          </div>
-          <div class="auth-form__group">
-            <input type="password" class="auth-form__input" placeholder="Nhập mật khẩu">
-          </div>
-          <div class="auth-form__group">
-            <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
-          </div>
-      </div>
-      <!--author policy-->
-      <div class="auth-form__aside">
-        <p class="auth-form__policy-text">
-          Bằng việc đăng ký,bạn đã đồng ý với chúng tôi về
-          <a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> &
-          <a href="" class="auth-form__text-link">Chính sách bảo mật</a>
-        </p>
-      </div>
-      <!--author control button-->
-      <div class="auth-form__controls">
-        <button class="btn btn--normal auth-form__controls--back">TRỞ LẠI</button>
-        <button class="btn btn--main">ĐĂNG KÝ</button>
-      </div>
-    </div>
-    <!--author social connect-->
-    <div class="auth-form__socials">
-      <a href="" class=" auth-form__socials--facebook btn btn--size-s btn--with-icon">
-        <i class="auth-form__socials-icon fab fa-facebook-square"></i>
-        <span class="auth-form__socials-tittle">
-          Kết nối với Facebook
-        </span>
-      </a>
-      <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
-        <i class="fab fa-google auth-form__socials-icon"></i>
-        <span class="auth-form__socials-tittle">
-          Kết nối với Google
-        </span>
-      </a>
-    </div>
-  </div>
+    <section style="height: 3000px; padding-right: 5%; padding-left: 5%;">
+      <p style="font-size: 2rem; padding-top: 30rem;">
+        Font Awesome is a font and icon toolkit based on CSS and Less. It was made by Dave Gandy for use with Bootstrap, and later was incorporated into the BootstrapCDN. Font Awesome has a 38% market share among those websites that use third-party font scripts on their platform, ranking it second place after Google Fonts. Wikipedia
+        Font Awesome is a font and icon toolkit based on CSS and Less. It was made by Dave Gandy for use with Bootstrap, and later was incorporated into the BootstrapCDN. Font Awesome has a 38% market share among those websites that use third-party font scripts on their platform, ranking it second place after Google Fonts. Wikipedia
+        Font Awesome is a font and icon toolkit based on CSS and Less. It was made by Dave Gandy for use with Bootstrap, and later was incorporated into the BootstrapCDN. Font Awesome has a 38% market share among those websites that use third-party font scripts on their platform, ranking it second place after Google Fonts. Wikipedia
+        Font Awesome is a font and icon toolkit based on CSS and Less. It was made by Dave Gandy for use with Bootstrap, and later was incorporated into the BootstrapCDN. Font Awesome has a 38% market share among those websites that use third-party font scripts on their platform, ranking it second place after Google Fonts. Wikipedia
+        Font Awesome is a font and icon toolkit based on CSS and Less. It was made by Dave Gandy for use with Bootstrap, and later was incorporated into the BootstrapCDN. Font Awesome has a 38% market share among those websites that use third-party font scripts on their platform, ranking it second place after Google Fonts. Wikipedia
+        Font Awesome is a font and icon toolkit based on CSS and Less. It was made by Dave Gandy for use with Bootstrap, and later was incorporated into the BootstrapCDN. Font Awesome has a 38% market share among those websites that use third-party font scripts on their platform, ranking it second place after Google Fonts. Wikipedia
+        Font Awesome is a font and icon toolkit based on CSS and Less. It was made by Dave Gandy for use with Bootstrap, and later was incorporated into the BootstrapCDN. Font Awesome has a 38% market share among those websites that use third-party font scripts on their platform, ranking it second place after Google Fonts. Wikipedia
+        Font Awesome is a font and icon toolkit based on CSS and Less. It was made by Dave Gandy for use with Bootstrap, and later was incorporated into the BootstrapCDN. Font Awesome has a 38% market share among those websites that use third-party font scripts on their platform, ranking it second place after Google Fonts. Wikipedia
+        Font Awesome is a font and icon toolkit based on CSS and Less. It was made by Dave Gandy for use with Bootstrap, and later was incorporated into the BootstrapCDN. Font Awesome has a 38% market share among those websites that use third-party font scripts on their platform, ranking it second place after Google Fonts. Wikipedia
+        Font Awesome is a font and icon toolkit based on CSS and Less. It was made by Dave Gandy for use with Bootstrap, and later was incorporated into the BootstrapCDN. Font Awesome has a 38% market share among those websites that use third-party font scripts on their platform, ranking it second place after Google Fonts. Wikipedia
+        Font Awesome is a font and icon toolkit based on CSS and Less. It was made by Dave Gandy for use with Bootstrap, and later was incorporated into the BootstrapCDN. Font Awesome has a 38% market share among those websites that use third-party font scripts on their platform, ranking it second place after Google Fonts. Wikipedia
+      </p>
+
+    </section>
+
     <!---------XX----------MAIN BODY SECTION--------XX-------->
 
     <!--------------------------FOOTER------------------------>
@@ -304,11 +273,11 @@
           <div class="category col l-3 m-6 c-12">
             <h6 class="footer-tittle category-tittle">Danh mục</h6>
             <ul class="footer-links">
-              <li><a href="">Trang chủ</a></li>
+              <li><a href="index.html">Trang chủ</a></li>
               <li><a href="">Thể loại</a></li>
               <li><a href="">Xếp hạng</a></li>
-              <li><a href="">Đăng ký</a></li>
-              <li><a href="">Đăng nhập</a></li>
+              <li class="click__register">Đăng ký</li>
+              <li class="click__login">Đăng nhập</li>
             </ul>
           </div>
 
@@ -330,7 +299,7 @@
           <div class="copyright col l-6 m-12 c-12">
             <p class="copyright-text">
               Copyright &copy; 2020 All Rights Reserved by
-              <a href="#">OnlyComic</a>.
+              <a href="index.html">OnlyComic</a>.
             </p>
           </div>
 
@@ -362,7 +331,7 @@
       </div>
     </footer>
     <!---------XX---------------FOOTER-------------XX-------->
-    <script src="./js/main.js"></script>
+    <script src="./js/user_logined.js"></script>
 
     <!-- Load Facebook SDK for JavaScript -->
     <div id="fb-root"></div>
@@ -396,3 +365,4 @@
     ></div>
   </body>
 </html>
+

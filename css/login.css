@@ -83,9 +83,6 @@ input {
   color: #636363;
   border-color: #1161ee;
 }
-input#pass.input {
-  padding: 15px 80px 15px 20px;
-}
 .login-form {
   min-height: 345px;
   position: relative;
@@ -167,9 +164,11 @@ input#pass.input {
 }
 .login-form .group .check + label {
   color: rgb(147, 147, 147);
+  cursor: pointer;
 }
 .login-form .group .check:checked + label {
   color: rgb(99, 99, 99);
+  cursor: pointer;
 }
 .login-form .group .check:checked + label .icon {
   background: #1161ee;
@@ -338,4 +337,8 @@ input#pass.input {
 }
 .group i:hover {
   color: #4e4e4e;
+}
+/*Other CSS*/
+input#pass.input {
+  padding: 15px 80px 15px 20px;
 }

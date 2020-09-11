@@ -1,0 +1,341 @@
+body {
+  margin: 0;
+  color: #6a6f8c;
+  font: 600 16px/18px "Open Sans", sans-serif;
+}
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+.clearfix:after,
+.clearfix:before {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+  display: block;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+input {
+  outline: none;
+}
+
+/*form*/
+.login-wrap {
+  position: relative;
+  width: 100%;
+  top: 20px;
+  left: 50%;
+  max-width: 525px;
+  min-height: 670px;
+  background: url() no-repeat center;
+  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.login-html {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  padding: 70px 70px 50px 70px;
+  background: rgba(247, 252, 255, 0.9);
+}
+.login-html .sign-in-htm,
+.login-html .sign-up-htm {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  transition: all 0.5s linear;
+}
+.login-html .sign-in,
+.login-html .sign-up,
+.login-form .group .check {
+  display: none;
+}
+.login-html .tab,
+.login-form .group .label,
+.login-form .group .button {
+  text-transform: uppercase;
+}
+.login-html .tab {
+  font-size: 22px;
+  margin-right: 15px;
+  padding-bottom: 5px;
+  margin: 0 15px 20px 0;
+  display: inline-block;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+.login-html .sign-in + .tab,
+.login-html .sign-up + .tab {
+  color: rgb(147, 147, 147);
+}
+.login-html .sign-in:checked + .tab,
+.login-html .sign-up:checked + .tab {
+  color: #636363;
+  border-color: #1161ee;
+}
+input#pass.input {
+  padding: 15px 80px 15px 20px;
+}
+.login-form {
+  min-height: 345px;
+  position: relative;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+.login-form .group {
+  margin-bottom: 15px;
+}
+.login-form .group .button {
+  margin-top: 32px;
+  cursor: pointer;
+}
+.login-form .group .button:hover {
+  background: rgb(0, 39, 255);
+}
+.login-form .group .label,
+.login-form .group .input,
+.login-form .group .button {
+  width: 100%;
+  color: #fff;
+  display: block;
+}
+.login-form .group .input {
+  color: rgb(113, 113, 113);
+}
+.login-form .group .input,
+.login-form .group .button {
+  border: 1px solid transparent;
+  padding: 15px 20px;
+  border-radius: 25px;
+  background: rgba(62, 62, 62, 0.1);
+}
+.login-form .group .input:hover {
+  border: 1px solid #aaa;
+}
+.login-form .group .input:focus {
+  border: 1px solid #4388ff;
+}
+.login-form .group input[data-type="password"] {
+  text-security: circle;
+  -webkit-text-security: circle;
+}
+.login-form .group .label {
+  color: rgb(147, 147, 147);
+  font-size: 12px;
+}
+.login-form .group .button {
+  background: #1161ee;
+}
+.login-form .group label .icon {
+  position: relative;
+  top: 2px;
+  width: 15px;
+  height: 15px;
+  border-radius: 2px;
+  display: inline-block;
+  background: rgba(42, 42, 42, 0.2);
+}
+.login-form .group label .icon:before,
+.login-form .group label .icon:after {
+  content: "";
+  width: 10px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  transition: all 0.1s ease-in-out 0s;
+}
+.login-form .group label .icon:before {
+  left: 2px;
+  width: 5px;
+  bottom: 6px;
+  transform: scale(0) rotate(0);
+}
+.login-form .group label .icon:after {
+  top: 6px;
+  right: 2px;
+  transform: scale(0) rotate(0);
+}
+.login-form .group .check + label {
+  color: rgb(147, 147, 147);
+}
+.login-form .group .check:checked + label {
+  color: rgb(99, 99, 99);
+}
+.login-form .group .check:checked + label .icon {
+  background: #1161ee;
+}
+.login-form .group .check:checked + label .icon:before {
+  transform: scale(1) rotate(45deg);
+}
+.login-form .group .check:checked + label .icon:after {
+  transform: scale(1) rotate(-45deg);
+}
+.login-html
+  .sign-in:checked
+  + .tab
+  + .sign-up
+  + .tab
+  + .login-form
+  .sign-in-htm {
+  transform: rotate(0);
+}
+.login-html .sign-up:checked + .tab + .login-form .sign-up-htm {
+  transform: rotate(0);
+}
+.hr {
+  height: 1px;
+  margin: 46px 0 0 0;
+  background: rgb(99, 99, 99);
+}
+.foot-lnk {
+  text-align: center;
+}
+.foot-lnk label {
+  cursor: pointer;
+  color: rgb(147, 147, 147);
+}
+.foot-lnk label:hover {
+  color: rgb(99, 99, 99);
+}
+.foot-lnk.forgot {
+  text-align: right;
+  margin: 20px 0;
+  color: rgb(147, 147, 147);
+}
+.foot-lnk.forgot a:hover {
+  color: rgb(99, 99, 99);
+}
+/*policy*/
+.foot-aside {
+  margin-top: 26px;
+}
+.foot-policy-text {
+  font-size: 0.8rem;
+  font-family: arial;
+  line-height: 1rem;
+  text-align: center;
+  padding: 0 12px;
+}
+.foot-text-link {
+  font-family: arial;
+  text-decoration: none;
+  color: #3f51b5;
+}
+.foot-text-link:hover {
+  color: #0027ff;
+  text-decoration: underline #0027ff;
+}
+/*-------------------------social-----------------*/
+.social,
+.other-methor {
+  text-align: center;
+  margin: 30px 0;
+  color: #636363;
+}
+/* Wrapper */
+.icon-button {
+  position: relative;
+  display: inline-block;
+  background-color: rgba(227, 244, 255, 0.6);
+  border-radius: 3.6rem;
+  cursor: pointer;
+  font-size: 2rem;
+  line-height: 3.6rem;
+  height: 3.6rem;
+  width: 3.6rem;
+  margin: 0 10px;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* Circle */
+.icon-button span {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  height: 0;
+  width: 0;
+  margin: 0;
+  border-radius: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.icon-button:hover span {
+  width: 3.7rem;
+  height: 3.7rem;
+  border-radius: 3.6rem;
+  margin: -1.85rem;
+}
+.twitter span {
+  background-color: #4099ff;
+}
+.facebook span {
+  background-color: #3b5998;
+}
+.google-plus span {
+  background-color: #db5a3c;
+}
+/* Icons */
+.icon-button i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: none;
+  height: 3.55rem;
+  width: 3.55rem;
+  line-height: 3.55rem;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  z-index: 10;
+}
+.icon-button .icon-twitter {
+  color: #4099ff;
+}
+.icon-button .icon-facebook {
+  color: #3b5998;
+}
+.icon-button .icon-google-plus {
+  color: #db5a3c;
+}
+.icon-button:hover .icon-twitter,
+.icon-button:hover .icon-facebook,
+.icon-button:hover .icon-google-plus {
+  color: #fff;
+}
+/*hide/show password*/
+.login-icon {
+  position: absolute;
+  top: 7.15rem;
+  right: 2rem;
+  font-size: 1rem;
+  color: rgba(161, 161, 161, 0.4);
+  cursor: pointer;
+}
+.sign-up-icon {
+  position: absolute;
+  top: 12.15rem;
+  right: 2rem;
+  font-size: 1rem;
+  color: rgba(161, 161, 161, 0.4);
+  cursor: pointer;
+}
+.group i:hover {
+  color: #4e4e4e;
+}

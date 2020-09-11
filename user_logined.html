@@ -51,20 +51,112 @@
               </ul>
             </div>
 
-            <div class="nav-pc__mode-btn col l-2 m-2 c-12">
+            <div class="nav-pc__mode-btn col l-1 m-2 c-12">
                 <i class="fas fa-sun fa-spin nav-pc__button-icon"></i>
                 <i class="fas fa-moon nav-pc__button-icon" style="display: none;"></i>
             </div>
 
-            <div class="nav-pc__advanced-bar col l-4 m-0 c-0">
-              <ul class="nav-pc__advanced-bar-list nav-pc__bar-list">
+            <div class="nav-pc__advanced-bar col l-5 m-0 c-0">
+              <!-- <ul class="nav-pc__advanced-bar-list nav-pc__bar-list">
                 <li class="nav-pc__link "><a href="#">
                   <i class="fas fa-bell"></i>
                 </a></li>
                 <li class="nav-pc__link "><a href="#">
                   <i class="fas fa-user"></i>
                 </a></li>
-              </ul>
+              </ul> -->
+
+                <ul class="header__navbar-list">
+                  <li class="header__navbar-item header__navbar-item--has-notify">
+                    <a href="" class="header__navbar-item-link">
+                      <i class="header__navbar-icon fas fa-bell"></i>
+                      Thông Báo
+                    </a>
+                    <!--HEADER NOTIFY-->
+                    <div class="header__notify">
+                      <header class="header__notify-header">
+                        <h3>Thông báo mới nhận</h3>
+                      </header>
+                      <ul class="header__notify-list">
+                        <li class="header__notify-item">
+                          <a href="" class="header__notify-link">
+                            <img src="https://st.nettruyen.com/data/comics/141/tien-vo-de-ton.jpg" alt="" class="header__notify-img">
+                            <div class="header__notify-info">
+                              <span class="header__notify-name">TIÊN VÕ ĐẾ TÔN</span>
+                              <span class="header__notify-description">11/09/2020 05:30AM: Truyện Tiên Võ Đế Tôn mà bạn theo dõi vừa ra chương mới, xem ngay!!<span>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="header__notify-item">
+                          <a href="" class="header__notify-link">
+                            <img src="https://st.nettruyen.com/data/comics/118/wechat-sieu-cap.jpg" alt="" class="header__notify-img">
+                            <div class="header__notify-info">
+                              <span class="header__notify-name">WECHAT SIÊU CẤP</span>
+                              <span class="header__notify-description">06/09/2020 06:09AM: Tác giả TOKUDA mà bạn theo dõi vừa ra bộ truyện mới !!<span>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="header__notify-item">
+                          <a href="" class="header__notify-link">
+                            <img src="https://st.nettruyen.com/data/comics/197/van-co-than-vuong.jpg" alt="" class="header__notify-img">
+                            <div class="header__notify-info">
+                              <span class="header__notify-name">VẠN CỔ THẦN VƯƠNG</span>
+                              <span class="header__notify-description">04/09/2020 04:30PM: Truyện mới Vạn Cổ Thần Vương vừa mới xuất, đọc ngay !!<span>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="header__notify-item">
+                          <a href="" class="header__notify-link">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAilBMVEXaJR3//wDZEh7qmRXYAB7ZHR3ZGh3//QDbJhz99AP87gXZEB7++QHbKhzoiBXmfRb0yA3ldhfzww7iYxnwtRDurBH54QjhXhnjbhjdPBvxuQ/eRhvcNRzpkxT42grpjhX20gzjaRjgVRrspBTfTRr76QflehfuqhH43Qn21Av1zAzwtw/rnRPhYBkDKDW4AAAED0lEQVR4nO3d6VbqMBQFYBJOwlAUEZmEgkwq6H3/17tAKXRIoAyu0pP9/RVd7bE7bdMTWioBAAAAAAAAAAAAAAAAAAAAAAAAwNFT3hvweOiV8t6ER6MGYqDy3ogHI8uiLPPeiAdDXfGN8MSokRBihPBESX9TEx/hiaLxpiZjhCeqKraqeW/GI5GTXU0mCM8RrXY1WSE8R0F0EJ4I+byvyTPCE6KPfU0+EJ6QEiFcte3J5qEmTYQnQOtDTdYIT4DEEWqyo5uRmjR13pvzEOglUpMXHChbUkRhkN3QrVhNWgjPdnI6VhNMVW94lVhNKl7eG5Q/3RdxfYQnER2EZ4MqiZpUnK+JnoqkqevhofdUTd5dP1CokapJzfGaqHaqJEK03Z5F8d4MNXlz+xKFaoaauB0eNTOURIiZy+ExRsfx8Bij43Z4LNHhGR4lM6GOpSYdyvYHClQ61ZqXs/DrlprU/Uy/P28VqCj6x7Kz9/VTqDsjmiZvd++vMi3YUCxLqz8uyapavOls8v+0JD4VaCw5oIVtCL1dfVGw3ISUYXLkPl69Ih4kAfr8k5J8FvQgCchR9+4V6Y4KfjukaH7nknwVcnCNo156evF6jV6hcxPSen1+XzNa60Jdup5Az+f3NpMJi4Mk4A2Xd6jIcljwwTVOkXlG7RI/DAbXOOrfdldY6TPKTUhWxzeUZPxUvDu+DBSVry7JL7vchGhmnpM+pzZjmJuQ9pLdJlm8SC4XJWbUPF+DhCbjgyTgDS67K+wOWF2UmCnrEwyTDtvBNY7aWYfaWtGmoa+X6uuzcajfT2eODu8TToTOPiP56UpRYgsxTnNmmYaXuSRCOHAi3kosxDjNkWUamc86W46ceVLd5Ke40WmeWohxmhPLNC58YOpEp7mhm/yUhgM1MSzEOM2BZRoX9xo4EJ4Lo+NCeFTPejzYftDjPoNi6SYXtQUtLLMq7DvNLd3kr54uKcsENvdOc0t09tPQlgls5uHxTHOxx8Yjz9jW1OEdHjK0QkYbjxR9pT9QZx0ew0KMRju+x/QvfbLmuEzjwEsdBR8qeZmqVaqt6YtzeFLR8U2xoIlD4VHDxL5aGo+8YaJ2Q77h8eJ9oe/WZ3zJDuw53/BQrKutdSoRFJu0XbINTyw632caj2T124XweL+RNJx9Nq4o8vFfruGhw0VqtsajSFtTl2l41CDcw6yNR1oenhgyfSGADFv8nrP/0w8d2ExfCLCPzvKixiNvsGQcnt3X+gvxdmHjUdjWxPKFALuv9b+mGzpYl8vyhQC0ud4Yq2v2TOqVYPk2jW10ytc27G3X5TIMjyw3blj/SosGwzOP9vUt/2i1+f27bcvDuHWXGJYEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAmf/IgiyXNAAkFQAAAABJRU5ErkJggg==" alt="" class="header__notify-img">
+                            <div class="header__notify-info">
+                              <span class="header__notify-name">MỪNG NGÀY QUỐC KHÁNH VIỆT NAM</span>
+                              <span class="header__notify-description">02/09/2020 00:0AM: ONLYCOMIC xin chúc bạn có một ngày lễ thật vui vẻ, hạnh phúc và luôn ủng hộ ONLYCOMIC nhé <3<span>
+                            </div>
+                          </a>
+                        </li>
+      
+                      </ul>
+                      <footer class="header__notify-footer">
+                        <a href="" class="header__notify-footer-btn">
+                          Xem tất cả
+                        </a>
+                      </footer>
+                    </div>
+                  </li>
+                  <li class="header__navbar-item">
+                    <a href="" class="header__navbar-item-link">
+                      <i class="header__navbar-icon far fa-question-circle"></i>
+                      Trợ giúp
+                    </a>
+                  </li>
+                  <!--Đăng kí đăng nhập
+                  <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">
+                    Đăng ký
+                  </li>
+                  <li class="header__navbar-item header__navbar-item--strong">
+                    Đăng nhập
+                  </li>
+                  -->
+                  <li class="header__navbar-item header__navbar-user">
+                    <img class="header__navbar-user-img" src="http://demo.shop.tickid.vn/assets/images/avatar-default.png" alt="user">
+                    <span class="header__navbar-user-name">Người dùng</span>
+                    <ul class="header__navbar-user-menu">
+                      <li class="header__navbar-user-item">
+                        <a href="">Tài khoản của tôi</a>
+                      </li>
+                      <li class="header__navbar-user-item">
+                        <a href="">Địa chỉ của tôi</a>
+                      </li>
+                      <li class="header__navbar-user-item">
+                        <a href="">Đơn mua</a>
+                      </li>
+                      <li class="header__navbar-user-item header__navbar-user-item--separate">
+                        <a href="">Đăng xuất</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
             </div>
           </div>
 

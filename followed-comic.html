@@ -235,7 +235,7 @@
             <a href="user_logined.html" class="address-link first">Trang chủ</a>
           </li>
           <li class="address-tittle">
-            <a href="Dashboard.html" class="address-link">Thông tin chung</a>
+            <a href="followed-comic.html" class="address-link">Truyện đang theo dõi</a>
           </li>
         </ul>
       </div>
@@ -260,7 +260,7 @@
 
           <section class="user-link">
             <ul class="user-link-list">
-              <li class="user-link-item user-link-item--selected">
+              <li class="user-link-item ">
                 <a href="Dashboard.html">
                   <i class="user-link-icon fas fa-folder"></i>
                   <span class="user-link-text">Thông tin chung</span>
@@ -272,8 +272,8 @@
                   <span class="user-link-text">Thông tin tài khoản</span>
                 </a>
               </li>
-              <li class="user-link-item" >
-                <a href="followed-comic.html">
+              <li class="user-link-item user-link-item--selected" >
+                <a href="followed-comic.html ">
                   <i class="user-link-icon fas fa-bookmark"></i>
                   <span class="user-link-text">Truyện theo dõi</span>
                 </a>
@@ -313,61 +313,165 @@
         </div>
 
         <!-------------right---------------->
-        <!--general information:  style="display: none"  -->
-        <div class="right info general-info col l-9 m-8 c-12">
+        <!--followed-comic:  style="display: none"  -->
+        <div class="right info followed-comic col l-9 m-8 c-12">
           <div class="general-info-area">
-            <h1 class="info-tittle">Thông tin chung</h1>
+            <h1 class="info-tittle">Truyện đang theo dõi</h1>
             <div class="info-item">
-              <h2 class="info-item-tittle">Thông tin tài khoản</h2>
-              <a href="" class="info-item-link">Chỉnh sửa</a>
-            </div>
-            <div class="info-detail-box">
-              <div class="info-group">
-                <div class="info-label">Họ và tên:</div>
-                <div class="info-info">Nguyễn Văn User</div>
-              </div>
-              <div class="info-group">
-                <div class="info-label">Email:</div>
-                <div class="info-info">User@example.com</div>
-              </div>
-              <div class="info-group">
-                <div class="info-label">Số điện thoại:</div>
-                <div class="info-info">0123456789</div>
-              </div>
-            </div>
-            <div class="info-item">
-              <h2 class="info-item-tittle">Truyện theo dõi</h2>
-              <a href="" class="info-item-link">Xem tất cả</a>
-            </div>
-            <div class="info-item">
-              <h2 class="info-item-tittle">Bình luận</h2>
+              <h2 class="info-item-tittle">Thông tin chi tiết</h2>
               <a href="" class="info-item-link">Xem tất cả</a>
             </div>
             <!--table-->
-            <table class="table general-info">
+            <table class="table followed-comic">
               <thead class="table-header-wrap">
                 <tr class="table-header-list">
-                  <th class="table-header-item">Tên truyện</th>
-                  <th class="table-header-item">Thời gian</th>
-                  <th class="table-header-item">Nội dung</th>
+                  <th class="table-header-item followed-comic">Tên truyện</th>
+                  <th class="table-header-item followed-comic">
+                    Xem gần đây
+                  </th>
+                  <th class="table-header-item followed-comic">Chap mới</th>
                 </tr>
               </thead>
               <tbody class="table-body-wrap">
                 <tr class="table-body-list">
-                  <td class="table-body-item">Hắc ám huyết thời đại</td>
-                  <td class="table-body-item">04/09/2020</td>
-                  <td class="table-body-item">Truyện hay quá <3</td>
+                  <td valign="middle" class="table-body-item followed-comic">
+                    <a href="" class="followed-comic-name"
+                      >Hắc ám huyết thời đại</a
+                    >
+                  </td>
+                  <td class="table-body-item followed-comic">
+                    <i class="followed-comic-time">3 giờ trước</i>
+                  </td>
+                  <td class="table-body-item followed-comic">
+                    <div class="followed-comic-new-chap">
+                      <a href="" class="followed-comic-chap">Chap 273</a>
+                      <i class="followed-comic-time">3 giờ trước</i>
+                    </div>
+                  </td>
                 </tr>
+
                 <tr class="table-body-list">
-                  <td class="table-body-item">Trọng sinh đô thị tu tiên</td>
-                  <td class="table-body-item">06/09/2020</td>
-                  <td class="table-body-item">Hóng chương sau quá đi!</td>
+                  <td class="table-body-item followed-comic">
+                    <a href="" class="followed-comic-name">
+                      Trọng sinh đô thị tu tiên
+                    </a>
+                  </td>
+                  <td class="table-body-item followed-comic">
+                    <i class="followed-comic-time">3 giờ trước</i>
+                  </td>
+                  <td class="table-body-item followed-comic">
+                    <div class="followed-comic-new-chap">
+                      <a href="" class="followed-comic-chap">Chap 351</a>
+                      <i class="followed-comic-time">3 giờ trước</i>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr class="table-body-list">
+                  <td valign="middle" class="table-body-item followed-comic">
+                    <a href="" class="followed-comic-name"
+                      >Hắc ám huyết thời đại</a
+                    >
+                  </td>
+                  <td class="table-body-item followed-comic">
+                    <i class="followed-comic-time">3 giờ trước</i>
+                  </td>
+                  <td class="table-body-item followed-comic">
+                    <div class="followed-comic-new-chap">
+                      <a href="" class="followed-comic-chap">Chap 273</a>
+                      <i class="followed-comic-time">3 giờ trước</i>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr class="table-body-list">
+                  <td class="table-body-item followed-comic">
+                    <a href="" class="followed-comic-name">
+                      Trọng sinh đô thị tu tiên
+                    </a>
+                  </td>
+                  <td class="table-body-item followed-comic">
+                    <i class="followed-comic-time">3 giờ trước</i>
+                  </td>
+                  <td class="table-body-item followed-comic">
+                    <div class="followed-comic-new-chap">
+                      <a href="" class="followed-comic-chap">Chap 351</a>
+                      <i class="followed-comic-time">3 giờ trước</i>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr class="table-body-list">
+                  <td valign="middle" class="table-body-item followed-comic">
+                    <a href="" class="followed-comic-name"
+                      >Hắc ám huyết thời đại</a
+                    >
+                  </td>
+                  <td class="table-body-item followed-comic">
+                    <i class="followed-comic-time">3 giờ trước</i>
+                  </td>
+                  <td class="table-body-item followed-comic">
+                    <div class="followed-comic-new-chap">
+                      <a href="" class="followed-comic-chap">Chap 273</a>
+                      <i class="followed-comic-time">3 giờ trước</i>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr class="table-body-list">
+                  <td class="table-body-item followed-comic">
+                    <a href="" class="followed-comic-name">
+                      Trọng sinh đô thị tu tiên
+                    </a>
+                  </td>
+                  <td class="table-body-item followed-comic">
+                    <i class="followed-comic-time">3 giờ trước</i>
+                  </td>
+                  <td class="table-body-item followed-comic">
+                    <div class="followed-comic-new-chap">
+                      <a href="" class="followed-comic-chap">Chap 351</a>
+                      <i class="followed-comic-time">3 giờ trước</i>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr class="table-body-list">
+                  <td valign="middle" class="table-body-item followed-comic">
+                    <a href="" class="followed-comic-name"
+                      >Hắc ám huyết thời đại</a
+                    >
+                  </td>
+                  <td class="table-body-item followed-comic">
+                    <i class="followed-comic-time">3 giờ trước</i>
+                  </td>
+                  <td class="table-body-item followed-comic">
+                    <div class="followed-comic-new-chap">
+                      <a href="" class="followed-comic-chap">Chap 273</a>
+                      <i class="followed-comic-time">3 giờ trước</i>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr class="table-body-list">
+                  <td class="table-body-item followed-comic">
+                    <a href="" class="followed-comic-name">
+                      Trọng sinh đô thị tu tiên
+                    </a>
+                  </td>
+                  <td class="table-body-item followed-comic">
+                    <i class="followed-comic-time">3 giờ trước</i>
+                  </td>
+                  <td class="table-body-item followed-comic">
+                    <div class="followed-comic-new-chap">
+                      <a href="" class="followed-comic-chap">Chap 351</a>
+                      <i class="followed-comic-time">3 giờ trước</i>
+                    </div>
+                  </td>
                 </tr>
               </tbody>
             </table>
           </div>
         </div>
-      </div>
     </div>
   </section>
 

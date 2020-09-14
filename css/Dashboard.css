@@ -6,6 +6,7 @@
   color: var(--text-color);
   font-family: Arial, Helvetica, sans-serif;
 }
+
 :root {
   /* theme colors */
   --white: white;
@@ -35,10 +36,59 @@
   /* check box size */
   --checkbox-size: 1.4rem;
 }
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
   color: var(--white);
+}
+
+/*------------------------Global classes-----------------------------*/
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+span,
+i {
+  color: var(--white);
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.nav {
+  position: relative !important;
+  background: #16a085;
+}
+
+.nav-container a,
+.nav-pc__main-bar,
+.header__navbar-user-name,
+.header__navbar-item-link i,
+.nav-pc__mode-btn i {
+  color: white;
+}
+
+.header__navbar-user-item i,
+.header__navbar-user-item a {
+  color: #333;
 }
 /*------------------------Global classes-----------------------------*/
 .flex-column {

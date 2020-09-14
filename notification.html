@@ -235,7 +235,7 @@
             <a href="user_logined.html" class="address-link first">Trang chủ</a>
           </li>
           <li class="address-tittle">
-            <a href="Dashboard.html" class="address-link">Thông tin chung</a>
+            <a href="notification.html" class="address-link">Thông báo</a>
           </li>
         </ul>
       </div>
@@ -260,7 +260,7 @@
 
           <section class="user-link">
             <ul class="user-link-list">
-              <li class="user-link-item user-link-item--selected">
+              <li class="user-link-item">
                 <a href="Dashboard.html">
                   <i class="user-link-icon fas fa-folder"></i>
                   <span class="user-link-text">Thông tin chung</span>
@@ -290,7 +290,7 @@
                   <span class="user-link-text">Bình luận</span>
                 </a>
               </li>
-              <li class="user-link-item" >
+              <li class="user-link-item  user-link-item--selected" >
                 <a href="notification.html">
                   <i class="user-link-icon fas fa-bell"></i>
                   <span class="user-link-text">Thông báo</span>
@@ -313,55 +313,26 @@
         </div>
 
         <!-------------right---------------->
-        <!--general information:  style="display: none"  -->
-        <div class="right info general-info col l-9 m-8 c-12">
+        <!--Notification:  style="display: none"  -->
+        <!--Notification xài chung class với genenal information-->
+        <div class="right info notification col l-9 m-8 c-12">
           <div class="general-info-area">
-            <h1 class="info-tittle">Thông tin chung</h1>
-            <div class="info-item">
-              <h2 class="info-item-tittle">Thông tin tài khoản</h2>
-              <a href="" class="info-item-link">Chỉnh sửa</a>
-            </div>
-            <div class="info-detail-box">
-              <div class="info-group">
-                <div class="info-label">Họ và tên:</div>
-                <div class="info-info">Nguyễn Văn User</div>
-              </div>
-              <div class="info-group">
-                <div class="info-label">Email:</div>
-                <div class="info-info">User@example.com</div>
-              </div>
-              <div class="info-group">
-                <div class="info-label">Số điện thoại:</div>
-                <div class="info-info">0123456789</div>
-              </div>
-            </div>
-            <div class="info-item">
-              <h2 class="info-item-tittle">Truyện theo dõi</h2>
-              <a href="" class="info-item-link">Xem tất cả</a>
-            </div>
-            <div class="info-item">
-              <h2 class="info-item-tittle">Bình luận</h2>
-              <a href="" class="info-item-link">Xem tất cả</a>
-            </div>
+            <h1 class="info-tittle">Thông Báo</h1>
             <!--table-->
-            <table class="table general-info">
+            <table class="table notification">
               <thead class="table-header-wrap">
                 <tr class="table-header-list">
-                  <th class="table-header-item">Tên truyện</th>
-                  <th class="table-header-item">Thời gian</th>
-                  <th class="table-header-item">Nội dung</th>
+                  <th class="table-header-item notification">Thời gian</th>
+                  <th class="table-header-item notification">Nội dung</th>
                 </tr>
               </thead>
               <tbody class="table-body-wrap">
                 <tr class="table-body-list">
-                  <td class="table-body-item">Hắc ám huyết thời đại</td>
-                  <td class="table-body-item">04/09/2020</td>
-                  <td class="table-body-item">Truyện hay quá <3</td>
-                </tr>
-                <tr class="table-body-list">
-                  <td class="table-body-item">Trọng sinh đô thị tu tiên</td>
-                  <td class="table-body-item">06/09/2020</td>
-                  <td class="table-body-item">Hóng chương sau quá đi!</td>
+                  <td class="table-body-item notification">6 giờ trước</td>
+                  <td class="table-body-item notification">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugiat nobis ex quae.
+                  </td>
                 </tr>
               </tbody>
             </table>

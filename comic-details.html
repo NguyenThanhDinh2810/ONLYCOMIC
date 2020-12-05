@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts Awesome Icons -->
+    <link rel="stylesheet" href="css/all.css">
+
+    <!-- Custom style -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/user_logined.css">
+    <link rel="stylesheet" href="css/grid.css">
+
+    <!-- comic details -->
+    <link rel="stylesheet" href="css/comic-details.css">
+    <!-- responsive -->
+    <link rel="stylesheet" href="css/responsive/comic-details-responsive.css">
+    <link rel="stylesheet" href="css/responsive/responsive.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <title>ONLY COMIC</title>
+    <meta name="description" content="truyen hay, kiem soat thoi gian doc truyen, doc truyen thong minh" />
+</head>
+
+<body class=".night.light-scheme">
+    <div class="go-to-top__btn" id="go-to-top__btn">
+        <a href="#"><i class="fas fa-arrow-alt-circle-up"></i></a>
+    </div>
+    <!-- --------------------Navigation------------------ -->
+
+    <!--nav-bar-->
+    <nav class="nav">
+        <div class="grid wide">
+            <div class="nav-container flex-row">
+                <div class="nav-logo">
+                    <a href="index.html" class="nav-logo__link">ONLY COMIC</a>
+                </div>
+
+                <!--nav-pc-->
+                <div class="nav-pc__main-bar hide-on-mobile-tablet">
+                    <ul class="nav-pc__list flex-row hide">
+                        <li class="nav-pc__item">
+                            <a href="index.html" class="nav-pc__link">Trang chủ</a>
+                        </li>
+                        <li class="nav-pc__item">
+                            <a href="search.html" class="nav-pc__link">Tìm kiếm</a>
+                        </li>
+                        <li class="nav-pc__item">
+                            <a href="#xepLoai" class="nav-pc__link">Xếp loại</a>
+                        </li>
+                        <li class="nav-pc__item">
+                            <a href="#" class="nav-pc__link">Tương tác</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="nav-pc__mode-btn">
+                    <i class="fas fa-sun nav-pc__button-icon"></i>
+                    <i class="fas fa-moon nav-pc__button-icon" style="display: none;"></i>
+                </div>
+
+                <div class="nav-pc__advanced-bar hide-on-mobile-tablet">
+                    <div class="nav-pc__item">
+                        <a href="/login.html" class="nav-pc__link ">Đăng nhập</a>
+                    </div>
+                </div>
+                <!-- x-nav-pc-x -->
+
+                <!--nav-moblie-->
+
+                <label class="nav-mobile__bar-btn" for="nav-moblie-input">
+                    <i class="fas fa-bars fa-3x"></i>
+                </label>
+
+                <input type="checkbox" class="nav-mobile__input" id="nav-moblie-input" hidden />
+                <label class="nav-mobile__overlay" for="nav-moblie-input"></label>
+
+                <div class="nav-mobile__mobile">
+                    <label class="nav-mobile__mobile-close" for="nav-moblie-input">
+                        <i class="fas fa-times fa-3x"></i>
+                    </label>
+                    <ul class="nav-mobile__mobile-list">
+                        <li>
+                            <a class="nav-mobile__mobile-link" href="#">
+                                <i class="fas fa-home"> Trang chủ</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-mobile__mobile-link" href="search.html">
+                                <i class="fas fa-search">Tìm kiếm</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-mobile__mobile-link" href="#xepLoai">
+                                <i class="fas fa-trophy"> Xếp loại</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-mobile__mobile-link" href="">
+                                <i class="fas fa-exchange-alt"> Tương tác</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-mobile__mobile-link" href="/login.html">
+                                <i class="fas fa-sign-in-alt"> Đăng nhập</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-mobile__mobile-link" href="">
+                                <i class="fas fa-user-edit"> Đăng ký</i>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- x-nav-mobile-x -->
+
+            </div>
+
+            <!-- close grid -->
+        </div>
+    </nav>
+    <!-- ------x--------------Navigation--------x---------- -->
+
+    <!---------------------MAIN BODY SECTION------------------>
+    <div class="grid wide container" id="container">
+        <div class="row container__main">
+            <!-- chapter details -->
+            <div class="col l-8 m-12 c-12 container__center">
+                <article>
+                    <!-- header details -->
+                    <div class="row info-details">
+                        <div class="col l-12 m-12 c-12 info-details__header">
+                            <h2>NỮ DIỄN VIÊN TÀI NĂNG</h2>
+                            <span><em>[Cập nhật lúc: 17:10 11/09/2020]</em></span>
+                        </div>
+                        <div class="col l-3 m-3 c-12 info-details__images">
+                            <img src="images/comic-item/nu-dien-vien-tai-nang.jpg" alt="comic images">
+                        </div>
+                        <div class="col l-9 m-9 c-12 info-details__chapter">
+                            <ul class="info-details__chapter-status">
+                                <li>
+                                    <p><i class="fas fa-user"></i>Tác giả</p>
+                                    <p>Đang cập nhật</p>
+                                </li>
+                                <li>
+                                    <p><i class="fas fa-rss"></i>Tình trạng</p>
+                                    <p>Đang tiến hành</p>
+                                </li>
+                                <li>
+                                    <p><i class="fas fa-rss"></i>Tình trạng</p>
+                                    <p>Đang tiến hành</p>
+                                </li>
+                                <li>
+                                    <p><i class="fas fa-tags"></i>Thể loại</p>
+                                    <p>
+                                        <a href="javascript:;">Manga</a> -
+                                        <a href="javascript:;">Shounen</a> -
+                                        <a href="javascript:;">Slice of Life</a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p><i class="fas fa-eye"></i>Lượt xem</p>
+                                    <p>1.632.045</p>
+                                </li>
+                            </ul>
+                            <div class="follow">
+                                <div class="follow-items">
+                                    <p><a href="javascript:;">Nữ diễn viên tài năng</a></p>
+                                    <p> Xếp hạng: 4.4/5 - 1826 Lượt đánh giá.</p>
+                                </div>
+                                <div class="follow-items">
+                                    <p><a href="javascript:;"><i class="fas fa-heart"></i>Theo Dõi</a></p>
+                                    <p>10.385 Người Đã Theo Dõi</p>
+                                </div>
+                                <div class="follow-items">
+                                    <a href="javascript:;">Đọc từ đầu</a>
+                                    <a href="javascript:;">Đọc mới nhất</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--chapter content -->
+                    <div class="row details-content">
+                        <div class="col l-12 m-12 c-12">
+                            <h3><i class="fas fa-file-alt"></i>NỘI DUNG</h3>
+                            <p>Câu chuyện kể về một cô gái trẻ và một đạo diễn thiên tài gặp nhau tại buổi thử vai cho
+                                các
+                                diễn viên mới.</p>
+                        </div>
+                    </div>
+
+                    <!-- list chapter -->
+                    <div class="row details-content">
+                        <div class="col l-12 m-12 c-12">
+                            <h3><i class="fas fa-file-alt"></i>DANH SÁCH CHƯƠNG</h3>
+                        </div>
+                        <div class="col l-12 m-12 c-12">
+                            <ul class="list-chapters">
+                                <li class="list-chapter__items">
+                                    <div class="l-5 m-5 c-5">Số chương</div>
+                                    <div class="l-4 m-4 c-4">Cập nhật</div>
+                                    <div class="l-3 m-3 c-3">Lượt xem</div>
+                                </li>
+                                <li class="list-chapter__items">
+                                    <div class="l-5 m-5 c-5"><a href="javascript:;">Chapter 118</a></div>
+                                    <div class="l-4 m-4 c-4">2 giờ trước</div>
+                                    <div class="l-3 m-3 c-3">1.622</div>
+                                </li>
+                                <li class="list-chapter__items">
+                                    <div class="l-5 m-5 c-5"><a href="javascript:;">Chapter 118</a></div>
+                                    <div class="l-4 m-4 c-4">2 giờ trước</div>
+                                    <div class="l-3 m-3 c-3">1.622</div>
+                                </li>
+                                <li class="list-chapter__items">
+                                    <div class="l-5 m-5 c-5"><a href="javascript:;">Chapter 118</a></div>
+                                    <div class="l-4 m-4 c-4">2 giờ trước</div>
+                                    <div class="l-3 m-3 c-3">1.622</div>
+                                </li>
+                                <li class="list-chapter__items">
+                                    <div class="l-5 m-5 c-5"><a href="javascript:;">Chapter 118</a></div>
+                                    <div class="l-4 m-4 c-4">2 giờ trước</div>
+                                    <div class="l-3 m-3 c-3">1.622</div>
+                                </li>
+                                <li class="list-chapter__items">
+                                    <div class="l-5 m-5 c-5"><a href="javascript:;">Chapter 118</a></div>
+                                    <div class="l-4 m-4 c-4">2 giờ trước</div>
+                                    <div class="l-3 m-3 c-3">1.622</div>
+                                </li>
+                                <li class="list-chapter__items">
+                                    <div class="l-5 m-5 c-5"><a href="javascript:;">Chapter 118</a></div>
+                                    <div class="l-4 m-4 c-4">2 giờ trước</div>
+                                    <div class="l-3 m-3 c-3">1.622</div>
+                                </li>
+                                <li class="list-chapter__items">
+                                    <div class="l-5 m-5 c-5"><a href="javascript:;">Chapter 118</a></div>
+                                    <div class="l-4 m-4 c-4">2 giờ trước</div>
+                                    <div class="l-3 m-3 c-3">1.622</div>
+                                </li>
+                                <li class="list-chapter__items">
+                                    <div class="l-5 m-5 c-5"><a href="javascript:;">Chapter 118</a></div>
+                                    <div class="l-4 m-4 c-4">2 giờ trước</div>
+                                    <div class="l-3 m-3 c-3">1.622</div>
+                                </li>
+                                <li class="list-chapter__items">
+                                    <div class="l-5 m-5 c-5"><a href="javascript:;">Chapter 118</a></div>
+                                    <div class="l-4 m-4 c-4">2 giờ trước</div>
+                                    <div class="l-3 m-3 c-3">1.622</div>
+                                </li>
+                                <li class="list-chapter__items">
+                                    <div class="l-5 m-5 c-5"><a href="javascript:;">Chapter 118</a></div>
+                                    <div class="l-4 m-4 c-4">2 giờ trước</div>
+                                    <div class="l-3 m-3 c-3">1.622</div>
+                                </li>
+                                <li class="list-chapter__items">
+                                    <div class="l-5 m-5 c-5"><a href="javascript:;">Chapter 118</a></div>
+                                    <div class="l-4 m-4 c-4">2 giờ trước</div>
+                                    <div class="l-3 m-3 c-3">1.622</div>
+                                </li>
+                                <li class="list-chapter__items">
+                                    <div class="l-5 m-5 c-5"><a href="javascript:;">Chapter 118</a></div>
+                                    <div class="l-4 m-4 c-4">2 giờ trước</div>
+                                    <div class="l-3 m-3 c-3">1.622</div>
+                                </li>
+                                <li class="list-chapter__items">
+                                    <div class="l-5 m-5 c-5"><a href="javascript:;">Chapter 118</a></div>
+                                    <div class="l-4 m-4 c-4">2 giờ trước</div>
+                                    <div class="l-3 m-3 c-3">1.622</div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- see more -->
+                        <div class="col l-12 m-12 c-12 see-more">
+                            <a href="javascript:;"><i class="fas fa-plus"></i>Xem thêm</a>
+                        </div>
+                    </div>
+
+                    <!-- comments chapter -->
+                    <div class="row comments-chapter">
+                        <div class="col l-12 m-12 c-12 comments-chapter__like-share">
+                            <div class="like-share--status">
+                                <a href="javascript:;"><i class="fas fa-comments"></i>ONLYCOMIC <span>(365)</span></a>
+                                <a href="javascript:;"><i class="fab fa-facebook-f"></i>FACEBOOK <span>(35)</span></a>
+                            </div>
+                            <div class="like-page">
+                                <p>Like <a href="javascript:;">PAGE</a> để ủng hộ ONLYCOMIC nhé <a
+                                        href="javascript:;"><i class="fas fa-thumbs-up"></i>Like</a><a
+                                        href="javascript:;"><i class="fas fa-share"></i>Share</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col l-12 m-12 c-12 comments-content">
+                            <input type="text" name="text" id="text"
+                                placeholder="Mời bạn thảo luận, vui lòng nhập Tiếng Việt có dấu">
+                            <div class="user-comments">
+                                <div class="user-comment__items">
+                                    <div class="user-comments__items-left">
+                                        <img src="images/anonymous.png" alt="user images">
+                                        <span>Trả lời</span>
+                                    </div>
+                                    <div class="user-comments__items-right">
+                                        <div class="user-comments__details">
+                                            <p>
+                                                <span class="user-name">Yuuto</span>
+                                                <span class="user-member">Thành viên</span>
+                                                <span class="time"><i class="far fa-clock"></i>11 giờ trước</span>
+                                                <span class="chapter"><em>Chapter 118</em></span>
+                                            </p>
+                                            <p class="user-comments__content">Ngắn vl lại sắp drop vô thời hạn :(((</p>
+                                        </div>
+                                        <div class="user-comment__items user-comment__items-inside">
+                                            <div class="user-comments__items-left">
+                                                <img src="images/anonymous.png" alt="user images">
+                                                <span>Trả lời</span>
+                                            </div>
+                                            <div class="user-comments__items-right">
+                                                <div class="user-comments__details">
+                                                    <p>
+                                                        <span class="user-name">Yuuto</span>
+                                                        <span class="user-member">Thành viên</span>
+                                                        <span class="time"><i class="far fa-clock"></i>11 giờ
+                                                            trước</span>
+                                                        <span class="chapter"><em>Chapter 118</em></span>
+                                                    </p>
+                                                    <p class="user-comments__content">Ngắn vl lại sắp drop vô thời hạn
+                                                        :(((</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="user-comment__items">
+                                    <div class="user-comments__items-left">
+                                        <img src="images/anonymous.png" alt="user images">
+                                        <span>Trả lời</span>
+                                    </div>
+                                    <div class="user-comments__items-right">
+                                        <div class="user-comments__details">
+                                            <p>
+                                                <span class="user-name">Yuuto</span>
+                                                <span class="user-member">Thành viên</span>
+                                                <span class="time"><i class="far fa-clock"></i>11 giờ trước</span>
+                                                <span class="chapter"><em>Chapter 118</em></span>
+                                            </p>
+                                            <p class="user-comments__content">Nản ghê á trời
+                                                Sao mà đọc những trang truyện có thể là những trang truyện cuối cùng
+                                                trời :((
+                                                Mong là ít nhất có thể kết thúc bộ này với cái kết đáng có</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="user-comment__items">
+                                    <div class="user-comments__items-left">
+                                        <img src="images/anonymous.png" alt="user images">
+                                        <span>Trả lời</span>
+                                    </div>
+                                    <div class="user-comments__items-right">
+                                        <div class="user-comments__details">
+                                            <p>
+                                                <span class="user-name">Yuuto</span>
+                                                <span class="user-member">Thành viên</span>
+                                                <span class="time"><i class="far fa-clock"></i>11 giờ trước</span>
+                                                <span class="chapter"><em>Chapter 118</em></span>
+                                            </p>
+                                            <p class="user-comments__content">Cho em xin phép
+                                                Mọi người bỏ ra một chút thời gian truy cập vào link này giúp em với ạ
+                                                https://bit.()/TruyenHay
+                                                thay dấu ngoặc bằng chữ "ly" là vào được ạ
+                                                Cho em cảm ơn</p>
+                                        </div>
+                                        <div class="user-comment__items user-comment__items-inside">
+                                            <div class="user-comments__items-left">
+                                                <img src="images/anonymous.png" alt="user images">
+                                                <span>Trả lời</span>
+                                            </div>
+                                            <div class="user-comments__items-right">
+                                                <div class="user-comments__details">
+                                                    <p>
+                                                        <span class="user-name">Yuuto</span>
+                                                        <span class="user-member">Thành viên</span>
+                                                        <span class="time"><i class="far fa-clock"></i>11 giờ
+                                                            trước</span>
+                                                        <span class="chapter"><em>Chapter 118</em></span>
+                                                    </p>
+                                                    <p class="user-comments__content">Ngắn vl lại sắp drop vô thời hạn
+                                                        :(((</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="user-comment__items">
+                                    <div class="user-comments__items-left">
+                                        <img src="images/anonymous.png" alt="user images">
+                                        <span>Trả lời</span>
+                                    </div>
+                                    <div class="user-comments__items-right">
+                                        <div class="user-comments__details">
+                                            <p>
+                                                <span class="user-name">Yuuto</span>
+                                                <span class="user-member">Thành viên</span>
+                                                <span class="time"><i class="far fa-clock"></i>11 giờ trước</span>
+                                                <span class="chapter"><em>Chapter 118</em></span>
+                                            </p>
+                                            <p class="user-comments__content">tau thấy tau đen tối vler
+                                                đọc cái tên mà tau nghĩ tới diễn viên nhật bản :</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="user-comment__items">
+                                    <div class="user-comments__items-left">
+                                        <img src="images/anonymous.png" alt="user images">
+                                        <span>Trả lời</span>
+                                    </div>
+                                    <div class="user-comments__items-right">
+                                        <div class="user-comments__details">
+                                            <p>
+                                                <span class="user-name">Yuuto</span>
+                                                <span class="user-member">Thành viên</span>
+                                                <span class="time"><i class="far fa-clock"></i>11 giờ trước</span>
+                                                <span class="chapter"><em>Chapter 118</em></span>
+                                            </p>
+                                            <p class="user-comments__content">Mặc dù tình như là như thế nhưng hỏi ngu
+                                                tý bộ này có tiểu thuyết không</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- pagination -->
+                    <div class="pagination-container">
+                        <ul class="pagination">
+                            <li class="pagination-item">
+                                <a href="javascript:;" class="pagination-item__link-prev">
+                                    < Trước</a> </li> <li class="pagination-item__page-number active"><a
+                                            href="javascript:;">1</a>
+                            </li>
+                            <li class="pagination-item__page-number"><a href="javascript:;">2</a></li>
+                            <li class="pagination-item__page-number"><a href="javascript:;">3</a></li>
+                            <li class="pagination-item__page-number"><a href="javascript:;">4</a></li>
+                            <li class="pagination-item__page-number"><a href="javascript:;">5</a></li>
+                            <li class="pagination-item">
+                                <a href="javascript:;" class="pagination-item__link-next">Sau ></a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+
+            <!-- ranking -->
+            <div class="col l-4 m-12 c-12 container__right">
+                <div class="ranking-comic">
+                    <div class="header-ranking">
+                        <ul class="ranking-list">
+                            <li class="ranking-list__items"><a href="javascript:;">Top Tháng</a></li>
+                            <li class="ranking-list__items"><a href="javascript:;">Top Tuần</a></li>
+                            <li class="ranking-list__items"><a href="javascript:;">Top Ngày</a></li>
+                        </ul>
+                    </div>
+                    <div class="comic-name-ranking">
+                        <ul>
+                            <li class="comic-name-ranking__items">
+                                <div class="comic-name-ranking__details">
+                                    <span>01</span>
+                                    <div class="comic-name-ranking__details-images">
+                                        <img src="images/comic-item/vo-luyen-dinh-phong.jpg" alt="comic ranking">
+                                    </div>
+                                    <div class="comic-name-ranking__details-content">
+                                        <p><a href="javascript:;">Võ Luyện Đỉnh Phong</a></p>
+                                        <p><span>Chapter 670</span><span><i class="fas fa-eye"></i> 14.608.044</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="comic-name-ranking__items">
+                                <div class="comic-name-ranking__details">
+                                    <span>01</span>
+                                    <div class="comic-name-ranking__details-images">
+                                        <img src="images/comic-item/vo-luyen-dinh-phong.jpg" alt="comic ranking">
+                                    </div>
+                                    <div class="comic-name-ranking__details-content">
+                                        <p><a href="javascript:;">Võ Luyện Đỉnh Phong</a></p>
+                                        <p><span>Chapter 670</span><span><i class="fas fa-eye"></i> 14.608.044</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="comic-name-ranking__items">
+                                <div class="comic-name-ranking__details">
+                                    <span>01</span>
+                                    <div class="comic-name-ranking__details-images">
+                                        <img src="images/comic-item/vo-luyen-dinh-phong.jpg" alt="comic ranking">
+                                    </div>
+                                    <div class="comic-name-ranking__details-content">
+                                        <p><a href="javascript:;">Võ Luyện Đỉnh Phong</a></p>
+                                        <p><span>Chapter 670</span><span><i class="fas fa-eye"></i> 14.608.044</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="comic-name-ranking__items">
+                                <div class="comic-name-ranking__details">
+                                    <span>01</span>
+                                    <div class="comic-name-ranking__details-images">
+                                        <img src="images/comic-item/vo-luyen-dinh-phong.jpg" alt="comic ranking">
+                                    </div>
+                                    <div class="comic-name-ranking__details-content">
+                                        <p><a href="javascript:;">Võ Luyện Đỉnh Phong</a></p>
+                                        <p><span>Chapter 670</span><span><i class="fas fa-eye"></i> 14.608.044</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------XX----------MAIN BODY SECTION--------XX-------->
+
+
+    <!--------------------------FOOTER------------------------>
+    <footer class="footer">
+        <div class="grid wide">
+            <div class="row contact-wrap">
+                <div class="about-us col l-6 m-12 c-12">
+                    <h6 class="footer-tittle about-us-tittle">Về chúng tôi</h6>
+                    <p class="about-us-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuit nam
+                        totam quod, error nulla nisi obcaecati tenetur dolores? Doloremque
+                        vero nam totam quod, error nulla nisi obcaecati tenetur dolores
+                        nam totam quod, er eruor nulla nisi obcaecati tenetur dolores
+                        recusandae quibusdam corporis!
+                    </p>
+                </div>
+
+                <div class="category col l-3 m-6 c-12">
+                    <h6 class="footer-tittle category-tittle">Danh mục</h6>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="search.html">Tìm kiếm</a></li>
+                        <li><a href="#xepLoai">Xếp hạng</a></li>
+                        <li class="click__register"><a href="login.html">Đăng ký</a></li>
+                        <li class="click__login"><a href="login.html">Đăng nhập</a></li>
+                    </ul>
+                </div>
+
+                <div class="contact-us col l-3 m-6 c-12">
+                    <h6 class="footer-tittle contact-us-tittle">Liên hệ</h6>
+                    <ul class="footer-links">
+                        <li><a href="#tuongTac">Góp ý - Báo lỗi</a></li>
+                        <li><a href="">Chính sách bảo mật</a></li>
+                        <li><a href="">Chính sách khiếu nại</a></li>
+                        <li><a href="">Liên hệ quảng cáo</a></li>
+                        <li><a href="#main-page">Tới trang chính</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr />
+
+            <div class="row copyright-wrap">
+                <div class="copyright col l-6 m-12 c-12">
+                    <p class="copyright-text">
+                        Copyright &copy; 2020 All Rights Reserved by
+                        <a href="index.html">OnlyComic</a>.
+                    </p>
+                </div>
+
+                <div class="social col l-6 m-12 c-12">
+                    <ul class="social-icons">
+                        <li>
+                            <a class="facebook" href="https://www.facebook.com/Only-Comic-113336110494972">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="youtube" href="#">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="instagram" href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="google-plus" href="#">
+                                <i class="fab fa-google-plus"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!---------XX---------------FOOTER-------------XX-------->
+    <script src="./js/main.js"></script>
+
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: "v8.0",
+            });
+        };
+
+        (function (d, s, id) {
+            var js,
+                fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        })(document, "script", "facebook-jssdk");
+    </script>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat" attribution="setup_tool" page_id="113336110494972" theme_color="#0084ff"
+        logged_in_greeting="Xin chào, chúng tôi có thể giúp gì cho bạn?"
+        logged_out_greeting="Xin chào, chúng tôi có thể giúp gì cho bạn?"></div>
+</body>
+
+</html>

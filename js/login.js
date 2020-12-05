@@ -15,4 +15,12 @@ $(document).ready(function () {
     $(".fa-eye-slash").hide();
     $(".fa-eye").show();
   });
+  // carousel
+  $('.autoplay').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  });
+  // close carousel
 });

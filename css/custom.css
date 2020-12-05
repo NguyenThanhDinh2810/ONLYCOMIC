@@ -1,0 +1,29 @@
+/* custom carousel */
+.slick-prev:before,
+.slick-next:before {
+    line-height: 1;
+    opacity: .75;
+    color: black;
+}
+
+.slick-prev,
+.slick-next,
+.slick-prev:before,
+.slick-next:before {
+    --size: 40px;
+    width: var(--size);
+    height: var(--size);
+    font-size: var(--size);
+}
+
+.slick-prev {
+    transform: translate(-20px, -50%);
+}
+
+.slick-next {
+    transform: translate(20px, -50%);
+}
+
+.slick-list {
+    padding: 2rem 0;
+}

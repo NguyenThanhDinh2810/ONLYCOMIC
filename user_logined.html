@@ -1,130 +1,147 @@
 <!DOCTYPE html>
 <html lang="vi">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Fonts Awesome Icons -->
-    <link rel="stylesheet" href="css/all.css" />
 
-    <!-- Custom style -->
-    <link rel="stylesheet" href="css/user_logined.css" />
-    <link rel="stylesheet" href="css/grid.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>ONLY COMIC</title>
-    <meta
-      name="description"
-      content="truyen hay, kiem soat thoi gian doc truyen, doc truyen thong minh"
-    />
-  </head>
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 
-  <body class=".night.light-scheme">
-    <!-- --------------------Navigation------------------ -->
+  <!-- Fonts Awesome Icons -->
+  <link rel="stylesheet" href="css/all.css" />
 
-    <!--nav-bar-->
-    <nav class="nav">
-      <div class="grid wide">
-        <div class="nav-container flex-row">
-          <div class="nav-logo">
-            <a href="/" class="nav-logo__link">ONLY COMIC</a>
-          </div>
+  <!-- Custom style -->
+  <link rel="stylesheet" href="css/user_logined.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/grid.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-          <!--nav-pc-->
-          <div class="nav-pc__main-bar hide-on-mobile-tablet">
-            <ul class="nav-pc__list flex-row hide">
-              <li class="nav-pc__item">
-                <a href="#" class="nav-pc__link">Trang chủ</a>
-              </li>
-              <li class="nav-pc__item">
-                <a href="#" class="nav-pc__link">Tìm kiếm</a>
-              </li>
-              <li class="nav-pc__item">
-                <a href="#xepLoai" class="nav-pc__link">Xếp loại</a>
-              </li>
-              <li class="nav-pc__item">
-                <a href="#" class="nav-pc__link">Tương tác</a>
-              </li>
-            </ul>
-          </div>
+  <!-- reponsive style -->
+  <link rel="stylesheet" href="css/responsive/responsive.css">
+  <link rel="stylesheet" href="css/responsive/reponsive_search.css">
+  <link rel="stylesheet" href="css/responsive/comic-details-responsive.css">
 
-          <div class="nav-pc__mode-btn">
-            <i class="fas fa-sun nav-pc__button-icon"></i>
-            <i
-              class="fas fa-moon nav-pc__button-icon"
-              style="display: none"
-            ></i>
-          </div>
+  <link rel="stylesheet" href="css/custom.css">
 
-          <div class="nav-pc__advanced-bar">
-            <div class="nav-pc__item">
-              <ul class="header__navbar-list">
-                <li class="header__navbar-item header__navbar-item--has-notify">
-                  <a href="" class="header__navbar-item-link">
-                    <i class="header__navbar-icon fas fa-bell"></i>
-                  </a>
-                  <!--HEADER NOTIFY-->
-                  <div class="header__notify">
-                    <header class="header__notify-header">
-                      <h3>Thông báo mới nhận</h3>
-                    </header>
-                    <ul class="header__notify-list">
-                      <li class="header__notify-item">
-                        <a href="" class="header__notify-link">
-                          <img src="https://st.nettruyen.com/data/comics/141/tien-vo-de-ton.jpg" alt="" class="header__notify-img">
-                          <div class="header__notify-info">
-                            <span class="header__notify-name">TIÊN VÕ ĐẾ TÔN</span>
-                            <span class="header__notify-description">11/09/2020 05:30AM: Truyện Tiên Võ Đế Tôn mà bạn theo dõi vừa ra chương mới, xem ngay!!<span>
-                          </div>
-                        </a>
-                      </li>
-                      <li class="header__notify-item">
-                        <a href="" class="header__notify-link">
-                          <img src="https://st.nettruyen.com/data/comics/118/wechat-sieu-cap.jpg" alt="" class="header__notify-img">
-                          <div class="header__notify-info">
-                            <span class="header__notify-name">WECHAT SIÊU CẤP</span>
-                            <span class="header__notify-description">06/09/2020 06:09AM: Tác giả TOKUDA mà bạn theo dõi vừa ra bộ truyện mới !!<span>
-                          </div>
-                        </a>
-                      </li>
-                      <li class="header__notify-item">
-                        <a href="" class="header__notify-link">
-                          <img src="https://st.nettruyen.com/data/comics/197/van-co-than-vuong.jpg" alt="" class="header__notify-img">
-                          <div class="header__notify-info">
-                            <span class="header__notify-name">VẠN CỔ THẦN VƯƠNG</span>
-                            <span class="header__notify-description">04/09/2020 04:30PM: Truyện mới Vạn Cổ Thần Vương vừa mới xuất, đọc ngay !!<span>
-                          </div>
-                        </a>
-                      </li>
-                      <li class="header__notify-item">
-                        <a href="" class="header__notify-link">
-                          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAilBMVEXaJR3//wDZEh7qmRXYAB7ZHR3ZGh3//QDbJhz99AP87gXZEB7++QHbKhzoiBXmfRb0yA3ldhfzww7iYxnwtRDurBH54QjhXhnjbhjdPBvxuQ/eRhvcNRzpkxT42grpjhX20gzjaRjgVRrspBTfTRr76QflehfuqhH43Qn21Av1zAzwtw/rnRPhYBkDKDW4AAAED0lEQVR4nO3d6VbqMBQFYBJOwlAUEZmEgkwq6H3/17tAKXRIoAyu0pP9/RVd7bE7bdMTWioBAAAAAAAAAAAAAAAAAAAAAAAAwNFT3hvweOiV8t6ER6MGYqDy3ogHI8uiLPPeiAdDXfGN8MSokRBihPBESX9TEx/hiaLxpiZjhCeqKraqeW/GI5GTXU0mCM8RrXY1WSE8R0F0EJ4I+byvyTPCE6KPfU0+EJ6QEiFcte3J5qEmTYQnQOtDTdYIT4DEEWqyo5uRmjR13pvzEOglUpMXHChbUkRhkN3QrVhNWgjPdnI6VhNMVW94lVhNKl7eG5Q/3RdxfYQnER2EZ4MqiZpUnK+JnoqkqevhofdUTd5dP1CokapJzfGaqHaqJEK03Z5F8d4MNXlz+xKFaoaauB0eNTOURIiZy+ExRsfx8Bij43Z4LNHhGR4lM6GOpSYdyvYHClQ61ZqXs/DrlprU/Uy/P28VqCj6x7Kz9/VTqDsjmiZvd++vMi3YUCxLqz8uyapavOls8v+0JD4VaCw5oIVtCL1dfVGw3ISUYXLkPl69Ih4kAfr8k5J8FvQgCchR9+4V6Y4KfjukaH7nknwVcnCNo156evF6jV6hcxPSen1+XzNa60Jdup5Az+f3NpMJi4Mk4A2Xd6jIcljwwTVOkXlG7RI/DAbXOOrfdldY6TPKTUhWxzeUZPxUvDu+DBSVry7JL7vchGhmnpM+pzZjmJuQ9pLdJlm8SC4XJWbUPF+DhCbjgyTgDS67K+wOWF2UmCnrEwyTDtvBNY7aWYfaWtGmoa+X6uuzcajfT2eODu8TToTOPiP56UpRYgsxTnNmmYaXuSRCOHAi3kosxDjNkWUamc86W46ceVLd5Ke40WmeWohxmhPLNC58YOpEp7mhm/yUhgM1MSzEOM2BZRoX9xo4EJ4Lo+NCeFTPejzYftDjPoNi6SYXtQUtLLMq7DvNLd3kr54uKcsENvdOc0t09tPQlgls5uHxTHOxx8Yjz9jW1OEdHjK0QkYbjxR9pT9QZx0ew0KMRju+x/QvfbLmuEzjwEsdBR8qeZmqVaqt6YtzeFLR8U2xoIlD4VHDxL5aGo+8YaJ2Q77h8eJ9oe/WZ3zJDuw53/BQrKutdSoRFJu0XbINTyw632caj2T124XweL+RNJx9Nq4o8vFfruGhw0VqtsajSFtTl2l41CDcw6yNR1oenhgyfSGADFv8nrP/0w8d2ExfCLCPzvKixiNvsGQcnt3X+gvxdmHjUdjWxPKFALuv9b+mGzpYl8vyhQC0ud4Yq2v2TOqVYPk2jW10ytc27G3X5TIMjyw3blj/SosGwzOP9vUt/2i1+f27bcvDuHWXGJYEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAmf/IgiyXNAAkFQAAAABJRU5ErkJggg=="
-                           class="header__notify-img">
-                          <div class="header__notify-info">
-                            <span class="header__notify-name">MỪNG NGÀY QUỐC KHÁNH VIỆT NAM</span>
-                            <span class="header__notify-description">02/09/2020 00:0AM: ONLYCOMIC xin chúc bạn có một ngày lễ thật vui vẻ, hạnh phúc và luôn ủng hộ ONLYCOMIC nhé <3<span>
-                          </div>
-                        </a>
-                      </li>
-    
-                    </ul>
-                    <footer class="header__notify-footer">
-                      <a href="" class="header__notify-footer-btn">
-                        Xem tất cả
+  <title>ONLY COMIC</title>
+  <meta name="description" content="truyen hay, kiem soat thoi gian doc truyen, doc truyen thong minh" />
+</head>
+
+<body class=".night.light-scheme">
+  <div class="go-to-top__btn" id="go-to-top__btn">
+    <a href="#"><i class="fas fa-arrow-alt-circle-up"></i></a>
+  </div>
+  <!-- --------------------Navigation------------------ -->
+
+  <!--nav-bar-->
+  <nav class="nav">
+    <div class="grid wide">
+      <div class="nav-container flex-row">
+        <div class="nav-logo">
+          <a href="index.html" class="nav-logo__link">ONLY COMIC</a>
+        </div>
+
+        <!--nav-pc-->
+        <div class="nav-pc__main-bar hide-on-mobile-tablet">
+          <ul class="nav-pc__list flex-row hide">
+            <li class="nav-pc__item">
+              <a href="#" class="nav-pc__link">Trang chủ</a>
+            </li>
+            <li class="nav-pc__item">
+              <a href="search.html" class="nav-pc__link">Tìm kiếm</a>
+            </li>
+            <li class="nav-pc__item">
+              <a href="#xepLoai" class="nav-pc__link">Xếp loại</a>
+            </li>
+            <li class="nav-pc__item">
+              <a href="#tuongTac" class="nav-pc__link">Tương tác</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav-pc__mode-btn">
+          <i class="fas fa-sun nav-pc__button-icon"></i>
+          <i class="fas fa-moon nav-pc__button-icon" style="display: none"></i>
+        </div>
+
+        <div class="nav-pc__advanced-bar">
+          <div class="nav-pc__item">
+            <ul class="header__navbar-list">
+              <li class="header__navbar-item header__navbar-item--has-notify">
+                <a href="" class="header__navbar-item-link">
+                  <i class="header__navbar-icon fas fa-bell"></i>
+                </a>
+                <!--HEADER NOTIFY-->
+                <div class="header__notify">
+                  <header class="header__notify-header">
+                    <h3>Thông báo mới nhận</h3>
+                  </header>
+                  <ul class="header__notify-list">
+                    <li class="header__notify-item">
+                      <a href="" class="header__notify-link">
+                        <img src="https://st.nettruyen.com/data/comics/141/tien-vo-de-ton.jpg" alt=""
+                          class="header__notify-img">
+                        <div class="header__notify-info">
+                          <span class="header__notify-name">TIÊN VÕ ĐẾ TÔN</span>
+                          <span class="header__notify-description">11/09/2020 05:30AM: Truyện Tiên Võ Đế Tôn mà bạn theo
+                            dõi vừa ra chương mới, xem ngay!!<span>
+                        </div>
                       </a>
-                    </footer>
-                  </div>
-                </li>
-                <!-- <li class="header__navbar-item">
+                    </li>
+                    <li class="header__notify-item">
+                      <a href="" class="header__notify-link">
+                        <img src="https://st.nettruyen.com/data/comics/118/wechat-sieu-cap.jpg" alt=""
+                          class="header__notify-img">
+                        <div class="header__notify-info">
+                          <span class="header__notify-name">WECHAT SIÊU CẤP</span>
+                          <span class="header__notify-description">06/09/2020 06:09AM: Tác giả TOKUDA mà bạn theo dõi
+                            vừa ra bộ truyện mới !!<span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="header__notify-item">
+                      <a href="" class="header__notify-link">
+                        <img src="https://st.nettruyen.com/data/comics/197/van-co-than-vuong.jpg" alt=""
+                          class="header__notify-img">
+                        <div class="header__notify-info">
+                          <span class="header__notify-name">VẠN CỔ THẦN VƯƠNG</span>
+                          <span class="header__notify-description">04/09/2020 04:30PM: Truyện mới Vạn Cổ Thần Vương vừa
+                            mới xuất, đọc ngay !!<span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="header__notify-item">
+                      <a href="" class="header__notify-link">
+                        <img
+                          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAilBMVEXaJR3//wDZEh7qmRXYAB7ZHR3ZGh3//QDbJhz99AP87gXZEB7++QHbKhzoiBXmfRb0yA3ldhfzww7iYxnwtRDurBH54QjhXhnjbhjdPBvxuQ/eRhvcNRzpkxT42grpjhX20gzjaRjgVRrspBTfTRr76QflehfuqhH43Qn21Av1zAzwtw/rnRPhYBkDKDW4AAAED0lEQVR4nO3d6VbqMBQFYBJOwlAUEZmEgkwq6H3/17tAKXRIoAyu0pP9/RVd7bE7bdMTWioBAAAAAAAAAAAAAAAAAAAAAAAAwNFT3hvweOiV8t6ER6MGYqDy3ogHI8uiLPPeiAdDXfGN8MSokRBihPBESX9TEx/hiaLxpiZjhCeqKraqeW/GI5GTXU0mCM8RrXY1WSE8R0F0EJ4I+byvyTPCE6KPfU0+EJ6QEiFcte3J5qEmTYQnQOtDTdYIT4DEEWqyo5uRmjR13pvzEOglUpMXHChbUkRhkN3QrVhNWgjPdnI6VhNMVW94lVhNKl7eG5Q/3RdxfYQnER2EZ4MqiZpUnK+JnoqkqevhofdUTd5dP1CokapJzfGaqHaqJEK03Z5F8d4MNXlz+xKFaoaauB0eNTOURIiZy+ExRsfx8Bij43Z4LNHhGR4lM6GOpSYdyvYHClQ61ZqXs/DrlprU/Uy/P28VqCj6x7Kz9/VTqDsjmiZvd++vMi3YUCxLqz8uyapavOls8v+0JD4VaCw5oIVtCL1dfVGw3ISUYXLkPl69Ih4kAfr8k5J8FvQgCchR9+4V6Y4KfjukaH7nknwVcnCNo156evF6jV6hcxPSen1+XzNa60Jdup5Az+f3NpMJi4Mk4A2Xd6jIcljwwTVOkXlG7RI/DAbXOOrfdldY6TPKTUhWxzeUZPxUvDu+DBSVry7JL7vchGhmnpM+pzZjmJuQ9pLdJlm8SC4XJWbUPF+DhCbjgyTgDS67K+wOWF2UmCnrEwyTDtvBNY7aWYfaWtGmoa+X6uuzcajfT2eODu8TToTOPiP56UpRYgsxTnNmmYaXuSRCOHAi3kosxDjNkWUamc86W46ceVLd5Ke40WmeWohxmhPLNC58YOpEp7mhm/yUhgM1MSzEOM2BZRoX9xo4EJ4Lo+NCeFTPejzYftDjPoNi6SYXtQUtLLMq7DvNLd3kr54uKcsENvdOc0t09tPQlgls5uHxTHOxx8Yjz9jW1OEdHjK0QkYbjxR9pT9QZx0ew0KMRju+x/QvfbLmuEzjwEsdBR8qeZmqVaqt6YtzeFLR8U2xoIlD4VHDxL5aGo+8YaJ2Q77h8eJ9oe/WZ3zJDuw53/BQrKutdSoRFJu0XbINTyw632caj2T124XweL+RNJx9Nq4o8vFfruGhw0VqtsajSFtTl2l41CDcw6yNR1oenhgyfSGADFv8nrP/0w8d2ExfCLCPzvKixiNvsGQcnt3X+gvxdmHjUdjWxPKFALuv9b+mGzpYl8vyhQC0ud4Yq2v2TOqVYPk2jW10ytc27G3X5TIMjyw3blj/SosGwzOP9vUt/2i1+f27bcvDuHWXGJYEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAmf/IgiyXNAAkFQAAAABJRU5ErkJggg=="
+                          class="header__notify-img">
+                        <div class="header__notify-info">
+                          <span class="header__notify-name">MỪNG NGÀY QUỐC KHÁNH VIỆT NAM</span>
+                          <span class="header__notify-description">02/09/2020 00:0AM: ONLYCOMIC xin chúc bạn có một ngày
+                            lễ thật vui vẻ, hạnh phúc và luôn ủng hộ ONLYCOMIC nhé <3<span>
+                        </div>
+                      </a>
+                    </li>
+
+                  </ul>
+                  <footer class="header__notify-footer">
+                    <a href="notification.html" class="header__notify-footer-btn">
+                      Xem tất cả
+                    </a>
+                  </footer>
+                </div>
+              </li>
+              <!-- <li class="header__navbar-item">
                   <a href="" class="header__navbar-item-link">
                     <i class="header__navbar-icon far fa-question-circle"></i>
                     Trợ giúp
                   </a>
                 </li> -->
-                <!--Đăng kí đăng nhập
+              <!--Đăng kí đăng nhập
                 <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">
                   Đăng ký
                 </li>
@@ -132,268 +149,2261 @@
                   Đăng nhập
                 </li>
                 -->
-                <li class="header__navbar-item header__navbar-user">
-                  <img class="header__navbar-user-img" src="http://demo.shop.tickid.vn/assets/images/avatar-default.png" alt="user">
-                  <span class="header__navbar-user-name">Người dùng</span>
-                  <ul class="header__navbar-user-menu">
-                    <li class="header__navbar-user-item">
-                      <a href="">
-                        <i class="header__navbar-user-icon fas fa-user"></i> Trang cá nhân 
-                      </a>
-                    </li>
-                    <li class="header__navbar-user-item">
-                      <a href="">
-                        <i class="header__navbar-user-icon fas fa-bookmark"></i>  Truyện theo dõi
-                      </a>
-                    </li>
-                    <li class="header__navbar-user-item">
-                      <a href="">
-                        <i class="header__navbar-user-icon fas fa-file-upload"></i>  Truyện đã đăng
-                      </a>
-                    </li>
-                    <li class="header__navbar-user-item">
-                      <a href="">
-                        <i class="header__navbar-user-icon fas fa-question-circle"></i>  Trợ giúp</a>
-                    </li>
-                    <li class="header__navbar-user-item">
-                      <a href="">
-                        <i class="header__navbar-user-icon fas fa-bug"></i>  Báo lỗi
-                      </a>
-                    </li>
-                    <li class="header__navbar-user-item header__navbar-user-item--separate">
-                      <a href="">
-                        <i class="header__navbar-user-icon fas fa-sign-out-alt"></i>  Đăng xuất
-                      </a>
-                    </li>
-                  </ul>
+              <li class="header__navbar-item header__navbar-user">
+                <img class="header__navbar-user-img" src="http://demo.shop.tickid.vn/assets/images/avatar-default.png"
+                  alt="user">
+                <span class="header__navbar-user-name">Người dùng</span>
+                <ul class="header__navbar-user-menu">
+                  <li class="header__navbar-user-item">
+                    <a href="Dashboard.html">
+                      <i class="header__navbar-user-icon fas fa-user"></i> Trang cá nhân
+                    </a>
+                  </li>
+                  <li class="header__navbar-user-item">
+                    <a href="followed-comic.html">
+                      <i class="header__navbar-user-icon fas fa-bookmark"></i> Truyện theo dõi
+                    </a>
+                  </li>
+                  <li class="header__navbar-user-item">
+                    <a href="uploaded-comic.html">
+                      <i class="header__navbar-user-icon fas fa-file-upload"></i> Truyện đã đăng
+                    </a>
+                  </li>
+                  <li class="header__navbar-user-item">
+                    <a href="">
+                      <i class="header__navbar-user-icon fas fa-question-circle"></i> Trợ giúp</a>
+                  </li>
+                  <li class="header__navbar-user-item">
+                    <a href="">
+                      <i class="header__navbar-user-icon fas fa-bug"></i> Báo lỗi
+                    </a>
+                  </li>
+                  <li class="header__navbar-user-item header__navbar-user-item--separate">
+                    <a href="index.html">
+                      <i class="header__navbar-user-icon fas fa-sign-out-alt"></i> Đăng xuất
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- x-nav-pc-x -->
+
+        <!--nav-moblie-->
+
+        <label class="nav-mobile__bar-btn" for="nav-moblie-input">
+          <i class="fas fa-bars fa-3x"></i>
+        </label>
+
+        <input type="checkbox" class="nav-mobile__input" id="nav-moblie-input" hidden />
+        <label class="nav-mobile__overlay" for="nav-moblie-input"></label>
+
+        <div class="nav-mobile__mobile">
+          <label class="nav-mobile__mobile-close" for="nav-moblie-input">
+            <i class="fas fa-times fa-3x"></i>
+          </label>
+          <ul class="nav-mobile__mobile-list">
+            <li>
+              <a class="nav-mobile__mobile-link" href="#">
+                <i class="fas fa-home"> Trang chủ</i>
+              </a>
+            </li>
+            <li>
+              <a class="nav-mobile__mobile-link" href="search.html">
+                <i class="fas fa-search">Tìm kiếm</i>
+              </a>
+            </li>
+            <li>
+              <a class="nav-mobile__mobile-link" href="#xepLoai">
+                <i class="fas fa-trophy"> Xếp loại</i>
+              </a>
+            </li>
+            <li>
+              <a class="nav-mobile__mobile-link" href="">
+                <i class="fas fa-exchange-alt"> Tương tác</i>
+              </a>
+            </li>
+            <li>
+              <a class="nav-mobile__mobile-link" href="login.html">
+                <i class="fas fa-sign-in-alt"> Đăng nhập</i>
+              </a>
+            </li>
+            <li>
+              <a class="nav-mobile__mobile-link" href="login.html">
+                <i class="fas fa-user-edit"> Đăng ký</i>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+        <!-- x-nav-mobile-x -->
+      </div>
+
+      <!-- close grid -->
+    </div>
+  </nav>
+  <!-- ------x--------------Navigation--------x---------- -->
+
+  <!-- --------------------- Main site section----------------- -->
+  <section class="banner">
+    <div class="banner-container">
+      <div class="banner__content flex-column">
+        <h2 class="hide-on-mobile-tablet">chào mừng đến với ONLYCOMIC</h2>
+        <p class="hide-on-mobile-tablet">bạn hãy đăng nhập để có trải nhiệm tốt nhất</p>
+        <h2 class="active-with-mobile">Let's</h2>
+        <div class="banner__btn-item">
+          <span class="banner__btn-link-wrap">
+            <a href="login.html" class="banner__btn-link">Đăng nhập</a>
+          </span>
+          <span class="banner__btn-link-wrap">
+            <a href="#dangKy" class="banner__btn-link">Đăng ký</a>
+          </span>
+        </div>
+        <h3>--hoặc--</h3>
+        <span class="banner__btn-link-wrap">
+          <a href="#main-page" class="banner__btn-link--out">Đọc truyện</a>
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <section class="main-page" id="main-page">
+    <div class="grid wide">
+
+      <h2 class="suggest-bar__headline">Đề cử</h2>
+
+      <div class="suggest-bar__items autoplay row">
+        <div class="col l-2 m-3 c-6">
+          <a href="/comic-details.html" class="suggest-bar__item-link">
+            <div class="suggest-bar__item ">
+              <div class="suggest-bar__item-background"
+                style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);"></div>
+              <div class="suggest-bar__item-description flex-column">
+                <div class="suggest-bar__subtitle">Kiếm thần tuyệt thế </div>
+                <a href="#" class="suggest-bar__chap">Chap 300</a>
+                <div class="suggest-bar__time">
+                  <i class="fas fa-history"></i>
+                  <span> 3 giờ trước</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col l-2 m-3 c-6">
+          <a href="/comic-details.html" class="suggest-bar__item-link">
+            <div class="suggest-bar__item ">
+              <div class="suggest-bar__item-background"
+                style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);"></div>
+              <div class="suggest-bar__item-description flex-column">
+                <div class="suggest-bar__subtitle">Kiếm thần tuyệt thế</div>
+                <a href="#" class="suggest-bar__chap">Chap 300</a>
+                <div class="suggest-bar__time">
+                  <i class="fas fa-history"></i>
+                  <span> 3 giờ trước</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col l-2 m-3 c-6">
+          <a href="/comic-details.html" class="suggest-bar__item-link">
+            <div class="suggest-bar__item ">
+              <div class="suggest-bar__item-background"
+                style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);"></div>
+              <div class="suggest-bar__item-description flex-column">
+                <div class="suggest-bar__subtitle">Kiếm thần tuyệt thế</div>
+                <a href="#" class="suggest-bar__chap">Chap 300</a>
+                <div class="suggest-bar__time">
+                  <i class="fas fa-history"></i>
+                  <span> 3 giờ trước</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col l-2 m-3 c-6">
+          <a href="/comic-details.html" class="suggest-bar__item-link">
+            <div class="suggest-bar__item ">
+              <div class="suggest-bar__item-background"
+                style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);"></div>
+              <div class="suggest-bar__item-description flex-column">
+                <div class="suggest-bar__subtitle">Kiếm thần tuyệt thế</div>
+                <a href="#" class="suggest-bar__chap">Chap 300</a>
+                <div class="suggest-bar__time">
+                  <i class="fas fa-history"></i>
+                  <span> 3 giờ trước</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col l-2 m-3 c-6">
+          <a href="/comic-details.html" class="suggest-bar__item-link">
+            <div class="suggest-bar__item ">
+              <div class="suggest-bar__item-background"
+                style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);"></div>
+              <div class="suggest-bar__item-description flex-column">
+                <div class="suggest-bar__subtitle">Kiếm thần tuyệt thế</div>
+                <a href="#" class="suggest-bar__chap">Chap 300</a>
+                <div class="suggest-bar__time">
+                  <i class="fas fa-history"></i>
+                  <span> 3 giờ trước</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col l-2 m-3 c-6">
+          <a href="/comic-details.html" class="suggest-bar__item-link">
+            <div class="suggest-bar__item ">
+              <div class="suggest-bar__item-background"
+                style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);"></div>
+              <div class="suggest-bar__item-description flex-column">
+                <div class="suggest-bar__subtitle">Kiếm thần tuyệt thế</div>
+                <a href="#" class="suggest-bar__chap">Chap 300</a>
+                <div class="suggest-bar__time">
+                  <i class="fas fa-history"></i>
+                  <span> 3 giờ trước</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col l-2 m-3 c-6">
+          <a href="/comic-details.html" class="suggest-bar__item-link">
+            <div class="suggest-bar__item ">
+              <div class="suggest-bar__item-background"
+                style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);"></div>
+              <div class="suggest-bar__item-description flex-column">
+                <div class="suggest-bar__subtitle">Kiếm thần tuyệt thế</div>
+                <a href="#" class="suggest-bar__chap">Chap 300</a>
+                <div class="suggest-bar__time">
+                  <i class="fas fa-history"></i>
+                  <span> 3 giờ trước</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col l-2 m-3 c-6">
+          <a href="/comic-details.html" class="suggest-bar__item-link">
+            <div class="suggest-bar__item ">
+              <div class="suggest-bar__item-background"
+                style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);"></div>
+              <div class="suggest-bar__item-description flex-column">
+                <div class="suggest-bar__subtitle">Kiếm thần tuyệt thế</div>
+                <a href="#" class="suggest-bar__chap">Chap 300</a>
+                <div class="suggest-bar__time">
+                  <i class="fas fa-history"></i>
+                  <span> 3 giờ trước</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col l-2 m-3 c-6">
+          <a href="/comic-details.html" class="suggest-bar__item-link">
+            <div class="suggest-bar__item ">
+              <div class="suggest-bar__item-background"
+                style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);"></div>
+              <div class="suggest-bar__item-description flex-column">
+                <div class="suggest-bar__subtitle">Kiếm thần tuyệt thế</div>
+                <a href="#" class="suggest-bar__chap">Chap 300</a>
+                <div class="suggest-bar__time">
+                  <i class="fas fa-history"></i>
+                  <span> 3 giờ trước</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col l-2 m-3 c-6">
+          <a href="/comic-details.html" class="suggest-bar__item-link">
+            <div class="suggest-bar__item ">
+              <div class="suggest-bar__item-background"
+                style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);"></div>
+              <div class="suggest-bar__item-description flex-column">
+                <div class="suggest-bar__subtitle">Kiếm thần tuyệt thế</div>
+                <a href="#" class="suggest-bar__chap">Chap 300</a>
+                <div class="suggest-bar__time">
+                  <i class="fas fa-history"></i>
+                  <span> 3 giờ trước</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!--x- div row -x-->
+      </div>
+      <!-- x-suggest-bar-x -->
+
+      <div class="main-layout row">
+
+        <div class="latest__block col l-8 m-12 c-12">
+          <div class="grid latest__container">
+            <span class="latest__headline">
+              <h2>Truyện gần đây</h2>
+            </span>
+            <div class="row flex-row">
+              <div class="col l-3 m-4 c-6">
+                <a href="comic-details.html" class="latest__item-link">
+                  <div class="latest__item ">
+                    <div class="latest__item-background"
+                      style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);">
+                    </div>
+
+                    <div class="latest__item-description flex-column">
+                      <div class="latest__item-ranking flex-row">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+
+                      <div class="latest__subtitle flex-row">Kiếm thần tuyệt thế </div>
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class=" fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col l-3 m-4 c-6">
+                <a href="comic-details.html" class="latest__item-link">
+                  <div class="latest__item ">
+                    <div class="latest__item-background"
+                      style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);">
+                    </div>
+
+                    <div class="latest__item-description flex-column">
+                      <div class="latest__item-ranking flex-row">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+
+                      <div class="latest__subtitle flex-row">Kiếm thần tuyệt thế</div>
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class=" fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col l-3 m-4 c-6">
+                <a href="comic-details.html" class="latest__item-link">
+                  <div class="latest__item ">
+                    <div class="latest__item-background"
+                      style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);">
+                    </div>
+
+                    <div class="latest__item-description flex-column">
+                      <div class="latest__item-ranking flex-row">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+
+                      <div class="latest__subtitle flex-row">Kiếm thần tuyệt thế</div>
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class=" fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col l-3 m-4 c-6">
+                <a href="comic-details.html" class="latest__item-link">
+                  <div class="latest__item ">
+                    <div class="latest__item-background"
+                      style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);">
+                    </div>
+
+                    <div class="latest__item-description flex-column">
+                      <div class="latest__item-ranking flex-row">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+
+                      <div class="latest__subtitle flex-row">Kiếm thần tuyệt thế</div>
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class=" fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col l-3 m-4 c-6">
+                <a href="comic-details.html" class="latest__item-link">
+                  <div class="latest__item ">
+                    <div class="latest__item-background"
+                      style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);">
+                    </div>
+
+                    <div class="latest__item-description flex-column">
+                      <div class="latest__item-ranking flex-row">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+
+                      <div class="latest__subtitle flex-row">Kiếm thần tuyệt thế</div>
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class=" fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col l-3 m-4 c-6">
+                <a href="comic-details.html" class="latest__item-link">
+                  <div class="latest__item ">
+                    <div class="latest__item-background"
+                      style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);">
+                    </div>
+
+                    <div class="latest__item-description flex-column">
+                      <div class="latest__item-ranking flex-row">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+
+                      <div class="latest__subtitle flex-row">Kiếm thần tuyệt thế</div>
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class=" fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col l-3 m-4 c-6">
+                <a href="comic-details.html" class="latest__item-link">
+                  <div class="latest__item ">
+                    <div class="latest__item-background"
+                      style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);">
+                    </div>
+
+                    <div class="latest__item-description flex-column">
+                      <div class="latest__item-ranking flex-row">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+
+                      <div class="latest__subtitle flex-row">Kiếm thần tuyệt thế</div>
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class=" fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col l-3 m-4 c-6">
+                <a href="comic-details.html" class="latest__item-link">
+                  <div class="latest__item ">
+                    <div class="latest__item-background"
+                      style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);">
+                    </div>
+
+                    <div class="latest__item-description flex-column">
+                      <div class="latest__item-ranking flex-row">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+
+                      <div class="latest__subtitle flex-row">Kiếm thần tuyệt thế</div>
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class=" fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col l-3 m-4 c-6">
+                <a href="comic-details.html" class="latest__item-link">
+                  <div class="latest__item ">
+                    <div class="latest__item-background"
+                      style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);">
+                    </div>
+
+                    <div class="latest__item-description flex-column">
+                      <div class="latest__item-ranking flex-row">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+
+                      <div class="latest__subtitle flex-row">Kiếm thần tuyệt thế</div>
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class=" fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col l-3 m-4 c-6">
+                <a href="comic-details.html" class="latest__item-link">
+                  <div class="latest__item ">
+                    <div class="latest__item-background"
+                      style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);">
+                    </div>
+
+                    <div class="latest__item-description flex-column">
+                      <div class="latest__item-ranking flex-row">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+
+                      <div class="latest__subtitle flex-row">Kiếm thần tuyệt thế</div>
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class=" fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col l-3 m-4 c-6">
+                <a href="comic-details.html" class="latest__item-link">
+                  <div class="latest__item ">
+                    <div class="latest__item-background"
+                      style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);">
+                    </div>
+
+                    <div class="latest__item-description flex-column">
+                      <div class="latest__item-ranking flex-row">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+
+                      <div class="latest__subtitle flex-row">Kiếm thần tuyệt thế</div>
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class=" fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col l-3 m-4 c-6">
+                <a href="comic-details.html" class="latest__item-link">
+                  <div class="latest__item ">
+                    <div class="latest__item-background"
+                      style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);">
+                    </div>
+
+                    <div class="latest__item-description flex-column">
+                      <div class="latest__item-ranking flex-row">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+
+                      <div class="latest__subtitle flex-row">Kiếm thần tuyệt thế</div>
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class=" fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col l-3 m-4 c-6">
+                <a href="comic-details.html" class="latest__item-link">
+                  <div class="latest__item ">
+                    <div class="latest__item-background"
+                      style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);">
+                    </div>
+
+                    <div class="latest__item-description flex-column">
+                      <div class="latest__item-ranking flex-row">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+
+                      <div class="latest__subtitle flex-row">Kiếm thần tuyệt thế</div>
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class=" fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col l-3 m-4 c-6">
+                <a href="comic-details.html" class="latest__item-link">
+                  <div class="latest__item ">
+                    <div class="latest__item-background"
+                      style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);">
+                    </div>
+
+                    <div class="latest__item-description flex-column">
+                      <div class="latest__item-ranking flex-row">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+
+                      <div class="latest__subtitle flex-row">Kiếm thần tuyệt thế</div>
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class=" fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col l-3 m-4 c-6">
+                <a href="comic-details.html" class="latest__item-link">
+                  <div class="latest__item ">
+                    <div class="latest__item-background"
+                      style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);">
+                    </div>
+
+                    <div class="latest__item-description flex-column">
+                      <div class="latest__item-ranking flex-row">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+
+                      <div class="latest__subtitle flex-row">Kiếm thần tuyệt thế</div>
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class=" fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col l-3 m-4 c-6">
+                <a href="comic-details.html" class="latest__item-link">
+                  <div class="latest__item ">
+                    <div class="latest__item-background"
+                      style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);">
+                    </div>
+
+                    <div class="latest__item-description flex-column">
+                      <div class="latest__item-ranking flex-row">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+
+                      <div class="latest__subtitle flex-row">Kiếm thần tuyệt thế</div>
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class=" fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col l-3 m-4 c-6">
+                <a href="comic-details.html" class="latest__item-link">
+                  <div class="latest__item ">
+                    <div class="latest__item-background"
+                      style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);">
+                    </div>
+
+                    <div class="latest__item-description flex-column">
+                      <div class="latest__item-ranking flex-row">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+
+                      <div class="latest__subtitle flex-row">Kiếm thần tuyệt thế</div>
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class=" fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col l-3 m-4 c-6">
+                <a href="comic-details.html" class="latest__item-link">
+                  <div class="latest__item ">
+                    <div class="latest__item-background"
+                      style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);">
+                    </div>
+
+                    <div class="latest__item-description flex-column">
+                      <div class="latest__item-ranking flex-row">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+
+                      <div class="latest__subtitle flex-row">Kiếm thần tuyệt thế</div>
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class=" fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col l-3 m-4 c-6">
+                <a href="comic-details.html" class="latest__item-link">
+                  <div class="latest__item ">
+                    <div class="latest__item-background"
+                      style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);">
+                    </div>
+
+                    <div class="latest__item-description flex-column">
+                      <div class="latest__item-ranking flex-row">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+
+                      <div class="latest__subtitle flex-row">Kiếm thần tuyệt thế</div>
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class=" fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col l-3 m-4 c-6">
+                <a href="comic-details.html" class="latest__item-link">
+                  <div class="latest__item ">
+                    <div class="latest__item-background"
+                      style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);">
+                    </div>
+
+                    <div class="latest__item-description flex-column">
+                      <div class="latest__item-ranking flex-row">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+
+                      <div class="latest__subtitle flex-row">Kiếm thần tuyệt thế</div>
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class=" fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col l-3 m-4 c-6">
+                <a href="comic-details.html" class="latest__item-link">
+                  <div class="latest__item ">
+                    <div class="latest__item-background"
+                      style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);">
+                    </div>
+
+                    <div class="latest__item-description flex-column">
+                      <div class="latest__item-ranking flex-row">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+
+                      <div class="latest__subtitle flex-row">Kiếm thần tuyệt thế</div>
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class=" fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col l-3 m-4 c-6">
+                <a href="comic-details.html" class="latest__item-link">
+                  <div class="latest__item ">
+                    <div class="latest__item-background"
+                      style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);">
+                    </div>
+
+                    <div class="latest__item-description flex-column">
+                      <div class="latest__item-ranking flex-row">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+
+                      <div class="latest__subtitle flex-row">Kiếm thần tuyệt thế</div>
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class=" fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col l-3 m-4 c-6">
+                <a href="comic-details.html" class="latest__item-link">
+                  <div class="latest__item ">
+                    <div class="latest__item-background"
+                      style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);">
+                    </div>
+
+                    <div class="latest__item-description flex-column">
+                      <div class="latest__item-ranking flex-row">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+
+                      <div class="latest__subtitle flex-row">Kiếm thần tuyệt thế</div>
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class=" fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col l-3 m-4 c-6">
+                <a href="comic-details.html" class="latest__item-link">
+                  <div class="latest__item ">
+                    <div class="latest__item-background"
+                      style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);">
+                    </div>
+
+                    <div class="latest__item-description flex-column">
+                      <div class="latest__item-ranking flex-row">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+
+                      <div class="latest__subtitle flex-row">Kiếm thần tuyệt thế</div>
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class=" fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col l-3 m-4 c-6">
+                <a href="comic-details.html" class="latest__item-link">
+                  <div class="latest__item ">
+                    <div class="latest__item-background"
+                      style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);">
+                    </div>
+
+                    <div class="latest__item-description flex-column">
+                      <div class="latest__item-ranking flex-row">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+
+                      <div class="latest__subtitle flex-row">Kiếm thần tuyệt thế</div>
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class=" fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col l-3 m-4 c-6">
+                <a href="comic-details.html" class="latest__item-link">
+                  <div class="latest__item ">
+                    <div class="latest__item-background"
+                      style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);">
+                    </div>
+
+                    <div class="latest__item-description flex-column">
+                      <div class="latest__item-ranking flex-row">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+
+                      <div class="latest__subtitle flex-row">Kiếm thần tuyệt thế</div>
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class=" fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col l-3 m-4 c-6">
+                <a href="comic-details.html" class="latest__item-link">
+                  <div class="latest__item ">
+                    <div class="latest__item-background"
+                      style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);">
+                    </div>
+
+                    <div class="latest__item-description flex-column">
+                      <div class="latest__item-ranking flex-row">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+
+                      <div class="latest__subtitle flex-row">Kiếm thần tuyệt thế</div>
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class=" fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col l-3 m-4 c-6">
+                <a href="comic-details.html" class="latest__item-link">
+                  <div class="latest__item ">
+                    <div class="latest__item-background"
+                      style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);">
+                    </div>
+
+                    <div class="latest__item-description flex-column">
+                      <div class="latest__item-ranking flex-row">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+
+                      <div class="latest__subtitle flex-row">Kiếm thần tuyệt thế</div>
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class=" fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col l-3 m-4 c-6">
+                <a href="comic-details.html" class="latest__item-link">
+                  <div class="latest__item ">
+                    <div class="latest__item-background"
+                      style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);">
+                    </div>
+
+                    <div class="latest__item-description flex-column">
+                      <div class="latest__item-ranking flex-row">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+
+                      <div class="latest__subtitle flex-row">Kiếm thần tuyệt thế</div>
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class=" fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col l-3 m-4 c-6">
+                <a href="comic-details.html" class="latest__item-link">
+                  <div class="latest__item ">
+                    <div class="latest__item-background"
+                      style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);">
+                    </div>
+
+                    <div class="latest__item-description flex-column">
+                      <div class="latest__item-ranking flex-row">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+
+                      <div class="latest__subtitle flex-row">Kiếm thần tuyệt thế</div>
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class=" fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col l-3 m-4 c-6">
+                <a href="comic-details.html" class="latest__item-link">
+                  <div class="latest__item ">
+                    <div class="latest__item-background"
+                      style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);">
+                    </div>
+
+                    <div class="latest__item-description flex-column">
+                      <div class="latest__item-ranking flex-row">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+
+                      <div class="latest__subtitle flex-row">Kiếm thần tuyệt thế</div>
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class=" fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col l-3 m-4 c-6">
+                <a href="comic-details.html" class="latest__item-link">
+                  <div class="latest__item ">
+                    <div class="latest__item-background"
+                      style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);">
+                    </div>
+
+                    <div class="latest__item-description flex-column">
+                      <div class="latest__item-ranking flex-row">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+
+                      <div class="latest__subtitle flex-row">Kiếm thần tuyệt thế</div>
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class=" fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col l-3 m-4 c-6">
+                <a href="comic-details.html" class="latest__item-link">
+                  <div class="latest__item ">
+                    <div class="latest__item-background"
+                      style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);">
+                    </div>
+
+                    <div class="latest__item-description flex-column">
+                      <div class="latest__item-ranking flex-row">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+
+                      <div class="latest__subtitle flex-row">Kiếm thần tuyệt thế</div>
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class=" fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col l-3 m-4 c-6">
+                <a href="comic-details.html" class="latest__item-link">
+                  <div class="latest__item ">
+                    <div class="latest__item-background"
+                      style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);">
+                    </div>
+
+                    <div class="latest__item-description flex-column">
+                      <div class="latest__item-ranking flex-row">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+
+                      <div class="latest__subtitle flex-row">Kiếm thần tuyệt thế</div>
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class=" fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col l-3 m-4 c-6">
+                <a href="comic-details.html" class="latest__item-link">
+                  <div class="latest__item ">
+                    <div class="latest__item-background"
+                      style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);">
+                    </div>
+
+                    <div class="latest__item-description flex-column">
+                      <div class="latest__item-ranking flex-row">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+
+                      <div class="latest__subtitle flex-row">Kiếm thần tuyệt thế</div>
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class=" fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col l-3 m-4 c-6">
+                <a href="comic-details.html" class="latest__item-link">
+                  <div class="latest__item ">
+                    <div class="latest__item-background"
+                      style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);">
+                    </div>
+
+                    <div class="latest__item-description flex-column">
+                      <div class="latest__item-ranking flex-row">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+
+                      <div class="latest__subtitle flex-row">Kiếm thần tuyệt thế</div>
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class="fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+
+                      <div class="latest__chap-time flex-row">
+                        <a href="#" class="latest__chap">Chap 300</a>
+                        <div class="latest__time">
+                          <i class=" fas fa-history"></i>
+                          <span> 3 giờ trước</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- close row -->
+            </div>
+            <div class="pagination-container">
+              <ul class="pagination">
+                <li class="pagination-item">
+                  <a href="javascript:;" class="pagination-item__link-prev">
+                    < Trước</a> </li> <li class="pagination-item__page-number active"><a href="javascript:;">1</a>
+                </li>
+                <li class="pagination-item__page-number"><a href="javascript:;">2</a></li>
+                <li class="pagination-item__page-number"><a href="javascript:;">3</a></li>
+                <li class="pagination-item__page-number"><a href="javascript:;">4</a></li>
+                <li class="pagination-item__page-number"><a href="javascript:;">5</a></li>
+                <li class="pagination-item">
+                  <a href="javascript:;" class="pagination-item__link-next">Sau ></a>
                 </li>
               </ul>
             </div>
           </div>
-          <!-- x-nav-pc-x -->
-
-          <!--nav-moblie-->
-
-          <label class="nav-mobile__bar-btn" for="nav-moblie-input">
-            <i class="fas fa-bars fa-3x"></i>
-          </label>
-
-          <input
-            type="checkbox"
-            class="nav-mobile__input"
-            id="nav-moblie-input"
-            hidden
-          />
-          <label class="nav-mobile__overlay" for="nav-moblie-input"></label>
-
-          <div class="nav-mobile__mobile">
-            <label class="nav-mobile__mobile-close" for="nav-moblie-input">
-              <i class="fas fa-times fa-3x"></i>
-            </label>
-            <ul class="nav-mobile__mobile-list">
-              <li class="nav-mobile__mobile-link">
-                <a href="">
-                  <i class="fas fa-home"> Trang chủ</i>
-                </a>
-              </li>
-              <li class="nav-mobile__mobile-link">
-                <a href="">
-                  <i class="fas fa-filter"> Thể loại</i>
-                </a>
-              </li>
-              <li class="nav-mobile__mobile-link">
-                <a href="">
-                  <i class="fas fa-trophy"> Xếp loại</i>
-                </a>
-              </li>
-              <li class="nav-mobile__mobile-link">
-                <a href="">
-                  <i class="fas fa-exchange-alt"> Tương tác</i>
-                </a>
-              </li>
-              <li class="nav-mobile__mobile-link">
-                <a href="">
-                  <i class="fas fa-bell">  Thông báo</i>
-                </a>
-              </li>
-              </li>
-            </ul>
-          </div>
-          <!-- x-nav-mobile-x -->
+          <!-- close latest block -->
         </div>
 
-        <!-- close grid -->
+        <div class="function__block col l-4 m-0 c-0">
+          <div class="grid">
+            <div class="row">
+              <div class="col l-12">
+                <div class="clock__container flex-column">
+                  <div id="clock-analog">
+                    <div class="clock-analog__hour-container">
+                      <div class="clock-analog__hour" id="clock-analog__hour"></div>
+                    </div>
+                    <div class="clock-analog__minute-container">
+                      <div class="clock-analog__minute" id="clock-analog__minute"></div>
+                    </div>
+                    <div class="clock-analog__second-container">
+                      <div class="clock-analog__second" id="clock-analog__second"></div>
+                    </div>
+                  </div>
+
+                  <div class="flex-row" id="clock-digital">
+                    <div class="clock-digital__hour" id="clock-digital__hour"></div>
+                    <div class="clock-digital__minute" id="clock-digital__minute"></div>
+                    <div class="clock-digital__hour" id="clock-digital__second"></div>
+                    <div id="clock-digital_amPM"></div>
+                  </div>
+                </div>
+
+                <div class="feature__container l-12">
+                  <input type="checkbox" class="feature-nofication__active" id="feature">
+                  <label for="feature"><span>Kiểm soát giờ đọc
+                      truyện</span></label>
+                  <div class="feature-nofication">
+                    <p>(Trang sẽ chuyển màu để thông báo thời gian)</p>
+                    <div class="feature-nofication__item">
+                      <div class="feature-nofication__discription">
+                        <div class="flex-row">
+                          <h2>Thiết lập thời gian</h2> <input type="time">
+                        </div>
+                        <div class="feature-nofication__time-remaining">
+                          <h2>Thời gian còn lại:</h2>
+                          <div id="time-remaining"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="fillter-catagory__container l-12">
+                  <input type="checkbox" class="fillter-catagory__active" id="fillter-catagory">
+                  <label for="fillter-catagory"><span>Lọc thể loại</span></label>
+                  <div class="fillter-catagory">
+                    <p>(Hãy chọn thể loại bạn thích)</p>
+                    <ul class="fillter-catagory__list flex-row">
+                      <li class="fillter-catagory__item"><a href="" class="fillter-catagory__link">Action</a></li>
+                      <li class="fillter-catagory__item"><a href="" class="fillter-catagory__link">Adventure</a></li>
+                      <li class="fillter-catagory__item"><a href="" class="fillter-catagory__link">Anime</a></li>
+                      <li class="fillter-catagory__item"><a href="" class="fillter-catagory__link">Adult</a></li>
+                      <li class="fillter-catagory__item"><a href="" class="fillter-catagory__link">Chuyển sinh</a></li>
+                      <li class="fillter-catagory__item"><a href="" class="fillter-catagory__link">Comedy</a></li>
+                      <li class="fillter-catagory__item"><a href="" class="fillter-catagory__link">Comic</a></li>
+                      <li class="fillter-catagory__item"><a href="" class="fillter-catagory__link">Cooking</a></li>
+                      <li class="fillter-catagory__item"><a href="" class="fillter-catagory__link">Cổ đại</a></li>
+                      <li class="fillter-catagory__item"><a href="" class="fillter-catagory__link">Doujinshi</a></li>
+                      <li class="fillter-catagory__item"><a href="" class="fillter-catagory__link">Drama</a></li>
+                      <li class="fillter-catagory__item"><a href="" class="fillter-catagory__link">Đam mỹ</a></li>
+                      <li class="fillter-catagory__item"><a href="" class="fillter-catagory__link">Ecchi</a></li>
+                      <li class="fillter-catagory__item"><a href="" class="fillter-catagory__link">Fantasy</a></li>
+                      <li class="fillter-catagory__item"><a href="" class="fillter-catagory__link">Gender Bender</a>
+                      </li>
+                      <li class="fillter-catagory__item"><a href="" class="fillter-catagory__link">Harem</a></li>
+                      <li class="fillter-catagory__item"><a href="" class="fillter-catagory__link">Historical</a></li>
+                      <li class="fillter-catagory__item"><a href="" class="fillter-catagory__link">Horror</a></li>
+                      <li class="fillter-catagory__item"><a href="" class="fillter-catagory__link">Josei</a></li>
+                      <li class="fillter-catagory__item"><a href="" class="fillter-catagory__link">Live action</a></li>
+                      <li class="fillter-catagory__item"><a href="" class="fillter-catagory__link">Manga</a></li>
+                      <li class="fillter-catagory__item"><a href="" class="fillter-catagory__link">Mahua</a></li>
+                      <li class="fillter-catagory__item"><a href="" class="fillter-catagory__link">Mahwa</a></li>
+                      <li class="fillter-catagory__item"><a href="" class="fillter-catagory__link">Martial arts</a></li>
+                      <li class="fillter-catagory__item"><a href="" class="fillter-catagory__link">Mature</a></li>
+                      <li class="fillter-catagory__item"><a href="" class="fillter-catagory__link">Mecha</a></li>
+                      <li class="fillter-catagory__item"><a href="" class="fillter-catagory__link">Mystery</a></li>
+                      <li class="fillter-catagory__item"><a href="" class="fillter-catagory__link">Ngôn tình</a></li>
+                      <li class="fillter-catagory__item"><a href="" class="fillter-catagory__link">One shot</a></li>
+                      <li class="fillter-catagory__item"><a href="" class="fillter-catagory__link">Psychological</a>
+                      </li>
+                      <li class="fillter-catagory__item"><a href="" class="fillter-catagory__link">Romance</a></li>
+                      <li class="fillter-catagory__item"><a href="" class="fillter-catagory__link">School life</a></li>
+                      <li class="fillter-catagory__item"><a href="" class="fillter-catagory__link">Sci-fi</a></li>
+                      <li class="fillter-catagory__item"><a href="" class="fillter-catagory__link">Seinen</a></li>
+                      <li class="fillter-catagory__item"><a href="" class="fillter-catagory__link">Shoujo</a></li>
+                      <li class="fillter-catagory__item"><a href="" class="fillter-catagory__link">Shoujo Ai</a></li>
+                      <li class="fillter-catagory__item"><a href="" class="fillter-catagory__link">Shounen</a></li>
+                      <li class="fillter-catagory__item"><a href="" class="fillter-catagory__link">Shounen Ai</a></li>
+                      <li class="fillter-catagory__item"><a href="" class="fillter-catagory__link">Slice of Life</a>
+                      </li>
+                      <li class="fillter-catagory__item"><a href="" class="fillter-catagory__link">Smut</a></li>
+                      <li class="fillter-catagory__item"><a href="" class="fillter-catagory__link">Soft YaoiSmut</a>
+                      </li>
+                      <li class="fillter-catagory__item"><a href="" class="fillter-catagory__link">Soft Yuri</a></li>
+                      <li class="fillter-catagory__item"><a href="" class="fillter-catagory__link">Sports</a></li>
+                      <li class="fillter-catagory__item"><a href="" class="fillter-catagory__link">Supernatural</a></li>
+                      <li class="fillter-catagory__item"><a href="" class="fillter-catagory__link">Tạp chí truyện
+                          tranh</a></li>
+                      <li class="fillter-catagory__item"><a href="" class="fillter-catagory__link">Thiếu Nhi</a></li>
+                      <li class="fillter-catagory__item"><a href="" class="fillter-catagory__link">Tragedy</a></li>
+                      <li class="fillter-catagory__item"><a href="" class="fillter-catagory__link">Trinh Thám</a></li>
+                      <li class="fillter-catagory__item"><a href="" class="fillter-catagory__link">Truyện scan</a></li>
+                      <li class="fillter-catagory__item"><a href="" class="fillter-catagory__link">Truyện Màu</a></li>
+                      <li class="fillter-catagory__item"><a href="" class="fillter-catagory__link">Việt Nam</a></li>
+                      <li class="fillter-catagory__item"><a href="" class="fillter-catagory__link">Webtoon</a></li>
+                      <li class="fillter-catagory__item"><a href="" class="fillter-catagory__link">Xuyên Không</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- close col -->
+              </div>
+              <!-- close  row-->
+            </div>
+          </div>
+          <!-- close clock -->
+        </div>
+
+        <!-- close main layout -->
       </div>
-    </nav>
-    <!-- ------x--------------Navigation--------x---------- -->
 
-    <!---------------------MAIN BODY SECTION------------------>
-    <section style="height: 3000px; padding-right: 5%; padding-left: 5%">
-      <p style="font-size: 2rem; padding-top: 30rem">
-        Font Awesome is a font and icon toolkit based on CSS and Less. It was
-        made by Dave Gandy for use with Bootstrap, and later was incorporated
-        into the BootstrapCDN. Font Awesome has a 38% market share among those
-        websites that use third-party font scripts on their platform, ranking it
-        second place after Google Fonts. Wikipedia Font Awesome is a font and
-        icon toolkit based on CSS and Less. It was made by Dave Gandy for use
-        with Bootstrap, and later was incorporated into the BootstrapCDN. Font
-        Awesome has a 38% market share among those websites that use third-party
-        font scripts on their platform, ranking it second place after Google
-        Fonts. Wikipedia Font Awesome is a font and icon toolkit based on CSS
-        and Less. It was made by Dave Gandy for use with Bootstrap, and later
-        was incorporated into the BootstrapCDN. Font Awesome has a 38% market
-        share among those websites that use third-party font scripts on their
-        platform, ranking it second place after Google Fonts. Wikipedia Font
-        Awesome is a font and icon toolkit based on CSS and Less. It was made by
-        Dave Gandy for use with Bootstrap, and later was incorporated into the
-        BootstrapCDN. Font Awesome has a 38% market share among those websites
-        that use third-party font scripts on their platform, ranking it second
-        place after Google Fonts. Wikipedia Font Awesome is a font and icon
-        toolkit based on CSS and Less. It was made by Dave Gandy for use with
-        Bootstrap, and later was incorporated into the BootstrapCDN. Font
-        Awesome has a 38% market share among those websites that use third-party
-        font scripts on their platform, ranking it second place after Google
-        Fonts. Wikipedia Font Awesome is a font and icon toolkit based on CSS
-        and Less. It was made by Dave Gandy for use with Bootstrap, and later
-        was incorporated into the BootstrapCDN. Font Awesome has a 38% market
-        share among those websites that use third-party font scripts on their
-        platform, ranking it second place after Google Fonts. Wikipedia Font
-        Awesome is a font and icon toolkit based on CSS and Less. It was made by
-        Dave Gandy for use with Bootstrap, and later was incorporated into the
-        BootstrapCDN. Font Awesome has a 38% market share among those websites
-        that use third-party font scripts on their platform, ranking it second
-        place after Google Fonts. Wikipedia Font Awesome is a font and icon
-        toolkit based on CSS and Less. It was made by Dave Gandy for use with
-        Bootstrap, and later was incorporated into the BootstrapCDN. Font
-        Awesome has a 38% market share among those websites that use third-party
-        font scripts on their platform, ranking it second place after Google
-        Fonts. Wikipedia Font Awesome is a font and icon toolkit based on CSS
-        and Less. It was made by Dave Gandy for use with Bootstrap, and later
-        was incorporated into the BootstrapCDN. Font Awesome has a 38% market
-        share among those websites that use third-party font scripts on their
-        platform, ranking it second place after Google Fonts. Wikipedia Font
-        Awesome is a font and icon toolkit based on CSS and Less. It was made by
-        Dave Gandy for use with Bootstrap, and later was incorporated into the
-        BootstrapCDN. Font Awesome has a 38% market share among those websites
-        that use third-party font scripts on their platform, ranking it second
-        place after Google Fonts. Wikipedia Font Awesome is a font and icon
-        toolkit based on CSS and Less. It was made by Dave Gandy for use with
-        Bootstrap, and later was incorporated into the BootstrapCDN. Font
-        Awesome has a 38% market share among those websites that use third-party
-        font scripts on their platform, ranking it second place after Google
-        Fonts. Wikipedia
-      </p>
-    </section>
 
-    <!---------XX----------MAIN BODY SECTION--------XX-------->
 
-    <!--------------------------FOOTER------------------------>
-    <footer class="footer">
-      <div class="grid wide">
-        <div class="row contact-wrap">
-          <div class="about-us col l-6 m-12 c-12">
-            <h6 class="footer-tittle about-us-tittle">Về chúng tôi</h6>
-            <p class="about-us-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuit nam
-              totam quod, error nulla nisi obcaecati tenetur dolores? Doloremque
-              vero nam totam quod, error nulla nisi obcaecati tenetur dolores
-              nam totam quod, er eruor nulla nisi obcaecati tenetur dolores
-              recusandae quibusdam corporis!
-            </p>
+      <!--  close grid wide -->
+    </div>
+  </section>
+
+  <!-- --------Raking---------- -->
+  <section class="ranking-layout" id="xepLoai">
+    <div class="grid wide">
+      <div class="row">
+        <div class="col ranking-items flex-row">
+          <div class="follow-item">
+            <div class="follow-icon">
+              <span>
+                <a href="" class="follow-icon__link"><i class="fas fa-heart"></i></a>
+              </span>
+            </div>
+
+            <a href="" class="box__item-link">
+              <div class="box__item">
+                <div class="box__item-background"
+                  style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);">
+                </div>
+                <div class="box__item-description flex-column">
+                  <div class="box__subtitle">Kiếm thần tuyệt thế</div>
+                  <div class="box-number__content flex-column">
+                    <span>Lượt thích cao nhất:</span>
+                    <span class="box-number"> 24000</span>
+                    <a href="" class="box__btn" name="follow__link">Xem thêm</a>
+                  </div>
+                </div>
+
+              </div>
+            </a>
           </div>
 
-          <div class="category col l-3 m-6 c-12">
-            <h6 class="footer-tittle category-tittle">Danh mục</h6>
-            <ul class="footer-links">
-              <li><a href="index.html">Trang chủ</a></li>
-              <li><a href="">Thể loại</a></li>
-              <li><a href="">Xếp hạng</a></li>
-              <li class="click__register">Đăng ký</li>
-              <li class="click__login">Đăng nhập</li>
-            </ul>
-          </div>
+          <div class="view-item">
+            <div class="view-icon">
+              <span>
+                <a href="" class="view-icon__link"><i class="fas fa-eye"></i></a>
+              </span>
+            </div>
 
-          <div class="contact-us col l-3 m-6 c-12">
-            <h6 class="footer-tittle contact-us-tittle">Liên hệ</h6>
-            <ul class="footer-links">
-              <li><a href="">Góp ý - Báo lỗi</a></li>
-              <li><a href="">Chính sách bảo mật</a></li>
-              <li><a href="">Chính sách khiếu nại</a></li>
-              <li><a href="">Liên hệ quảng cáo</a></li>
-              <li><a href="">Tới cửa hàng chúng tôi</a></li>
-            </ul>
+            <a href="" class="box__item-link">
+              <div class="box__item">
+                <div class="box__item-background"
+                  style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);">
+                </div>
+                <div class="box__item-description flex-column">
+                  <div class="box__subtitle">Kiếm thần tuyệt thế</div>
+                  <div class="box-number__content flex-column">
+                    <span>Lượt xem cao nhất:</span>
+                    <span class="box-number"> 24000</span>
+                    <a href="" class="box__btn" name="view__link">Xem thêm</a>
+                  </div>
+                </div>
+              </div>
+            </a>
           </div>
+          <div class="comment-item">
+            <div class="comment-icon">
+              <span>
+                <a href="" class="comment-icon__link"><i class="fas fa-comment-dots"></i></a>
+              </span>
+            </div>
+
+            <a href="" class="box__item-link">
+              <div class="box__item">
+                <div class="box__item-background"
+                  style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);">
+                </div>
+                <div class="box__item-description flex-column">
+                  <div class="box__subtitle">Kiếm thần tuyệt thế</div>
+                  <div class="box-number__content flex-column">
+                    <span>Lượt bình luận cao nhất:</span>
+                    <span class="box-number"> 24000</span>
+                    <a href="" class="box__btn" name="comment__link">Xem thêm</a>
+                  </div>
+                </div>
+              </div>
+
+            </a>
+          </div>
+          <!-- close col -->
+        </div>
+        <!-- close row -->
+      </div>
+      <!-- close grid -->
+    </div>
+  </section>
+
+  <!-- x-------Raking------x--- -->
+
+  <!------------- interract ------------>
+  <section class="contact-layout" id="tuongTac">
+    <h1>Phản hồi/Góp ý</h1>
+    <form action="index.html" class="contact-form" method="POST">
+      <input type="text" class="contact-form__text" placeholder="Tên">
+      <input type="email" class="contact-form__text" placeholder="Email ">
+      <input type="text" class="contact-form__text" placeholder="Số điện thoại">
+      <textarea class="contact-form__text" placeholder="Phản hồi của bạn"></textarea>
+      <input type="submit" class="contact-form__btn" value="Gửi">
+    </form>
+  </section>
+  <!------------- interract ------------>
+
+
+  <!--------------------------FOOTER------------------------>
+  <footer class="footer">
+    <div class="grid wide">
+      <div class="row contact-wrap">
+        <div class="about-us col l-6 m-12 c-12">
+          <h6 class="footer-tittle about-us-tittle">Về chúng tôi</h6>
+          <p class="about-us-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuit nam
+            totam quod, error nulla nisi obcaecati tenetur dolores? Doloremque
+            vero nam totam quod, error nulla nisi obcaecati tenetur dolores
+            nam totam quod, er eruor nulla nisi obcaecati tenetur dolores
+            recusandae quibusdam corporis!
+          </p>
         </div>
 
-        <hr />
+        <div class="category col l-3 m-6 c-12">
+          <h6 class="footer-tittle category-tittle">Danh mục</h6>
+          <ul class="footer-links">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="search.html">Tìm kiếm</a></li>
+            <li><a href="#xepLoai">Xếp hạng</a></li>
+            <li class="click__register"><a href="login.html">Đăng ký</a></li>
+            <li class="click__login"><a href="login.html">Đăng nhập</a></li>
+          </ul>
+        </div>
 
-        <div class="row copyright-wrap">
-          <div class="copyright col l-6 m-12 c-12">
-            <p class="copyright-text">
-              Copyright &copy; 2020 All Rights Reserved by
-              <a href="index.html">OnlyComic</a>.
-            </p>
-          </div>
-
-          <div class="social col l-6 m-12 c-12">
-            <ul class="social-icons">
-              <li>
-                <a class="facebook" href="#">
-                  <i class="fab fa-facebook"></i>
-                </a>
-              </li>
-              <li>
-                <a class="youtube" href="#">
-                  <i class="fab fa-youtube"></i>
-                </a>
-              </li>
-              <li>
-                <a class="instagram" href="#">
-                  <i class="fab fa-instagram"></i>
-                </a>
-              </li>
-              <li>
-                <a class="google-plus" href="#">
-                  <i class="fab fa-google-plus"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
+        <div class="contact-us col l-3 m-6 c-12">
+          <h6 class="footer-tittle contact-us-tittle">Liên hệ</h6>
+          <ul class="footer-links">
+            <li><a href="#tuongTac">Góp ý - Báo lỗi</a></li>
+            <li><a href="">Chính sách bảo mật</a></li>
+            <li><a href="">Chính sách khiếu nại</a></li>
+            <li><a href="">Liên hệ quảng cáo</a></li>
+            <li><a href="#main-page">Tới trang chính</a></li>
+          </ul>
         </div>
       </div>
-    </footer>
-    <!---------XX---------------FOOTER-------------XX-------->
-    <script src="./js/user_logined.js"></script>
 
-    <!-- Load Facebook SDK for JavaScript -->
-    <div id="fb-root"></div>
-    <script>
-      window.fbAsyncInit = function () {
-        FB.init({
-          xfbml: true,
-          version: "v8.0",
-        });
-      };
+      <hr />
 
-      (function (d, s, id) {
-        var js,
-          fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js";
-        fjs.parentNode.insertBefore(js, fjs);
-      })(document, "script", "facebook-jssdk");
-    </script>
+      <div class="row copyright-wrap">
+        <div class="copyright col l-6 m-12 c-12">
+          <p class="copyright-text">
+            Copyright &copy; 2020 All Rights Reserved by
+            <a href="index.html">OnlyComic</a>.
+          </p>
+        </div>
 
-    <!-- Your Chat Plugin code -->
-    <div
-      class="fb-customerchat"
-      attribution="setup_tool"
-      page_id="113336110494972"
-      theme_color="#0084ff"
-      logged_in_greeting="Xin chào, chúng tôi có thể giúp gì cho bạn?"
-      logged_out_greeting="Xin chào, chúng tôi có thể giúp gì cho bạn?"
-    ></div>
-  </body>
+        <div class="social col l-6 m-12 c-12">
+          <ul class="social-icons">
+            <li>
+              <a class="facebook" href="https://www.facebook.com/Only-Comic-113336110494972">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a class="youtube" href="#">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+            <li>
+              <a class="instagram" href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a class="google-plus" href="#">
+                <i class="fab fa-google-plus"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!---------XX---------------FOOTER-------------XX-------->
+
+  <!-- Jquery script -->
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js">
+  </script>
+  <script src="./js/main.js"></script>
+
+  <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: "v8.0",
+      });
+    };
+
+    (function (d, s, id) {
+      var js,
+        fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    })(document, "script", "facebook-jssdk");
+  </script>
+
+  <!-- Your Chat Plugin code -->
+  <div class="fb-customerchat" attribution="setup_tool" page_id="113336110494972" theme_color="#0084ff"
+    logged_in_greeting="Xin chào, chúng tôi có thể giúp gì cho bạn?"
+    logged_out_greeting="Xin chào, chúng tôi có thể giúp gì cho bạn?"></div>
+</body>
+
 </html>
